@@ -2,15 +2,6 @@ using UnityEngine;
 
 public class Glass : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameColor color;
+    // 使用Trigger判定碰撞如果是MemberBase就把自己銷毀
 }
