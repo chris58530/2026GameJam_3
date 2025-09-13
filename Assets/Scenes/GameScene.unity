@@ -763,7 +763,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5bbee0653529c944ca31c9f955e6e3df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -811,6 +811,9 @@ MonoBehaviour:
   skillCooldown: 2
   speed: 3
   canMove: 1
+  canDash: 1
+  dashDistance: 3
+  dashDuration: 0.2
 --- !u!50 &400901211
 Rigidbody2D:
   serializedVersion: 5
@@ -1586,6 +1589,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: =Light Global=
       objectReference: {fileID: 0}
+    - target: {fileID: 2847434500110414569, guid: 040e40e26ca1e5b408c4e95939a16ebe, type: 3}
+      propertyPath: m_Intensity
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2847434500110414569, guid: 040e40e26ca1e5b408c4e95939a16ebe, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.443
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1663,7 +1674,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  roundIdleTime: 2
   spotLights: {fileID: 264712087}
+  discoBallImage: {fileID: 1764618178}
   spotLightImage: {fileID: 1541771996}
   colorSettings:
   - color: {r: 0.8207547, g: 0.16647384, b: 0.28793633, a: 1}
