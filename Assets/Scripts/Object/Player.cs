@@ -38,7 +38,7 @@ public class Player : MemberBase
 
     private void UpdateColor(GameColor gameColor)
     {
-        Color color = GameStateManager.Instance.colorSetting[(int)gameColor].color;
+        Color color = GameStateManager.Instance.colorSetting[(int)gameColor + 1].color;
         spriteRenderer.color = color;
     }
 

@@ -1666,11 +1666,11 @@ MonoBehaviour:
   spotLights: {fileID: 264712087}
   spotLightImage: {fileID: 1541771996}
   colorSettings:
-  - color: {r: 1, g: 0, b: 0, a: 1}
+  - color: {r: 0.8207547, g: 0.16647384, b: 0.28793633, a: 1}
     gameColor: 0
-  - color: {r: 0.41821158, g: 1, b: 0, a: 1}
+  - color: {r: 0.18405126, g: 0.8301887, b: 0.34802455, a: 1}
     gameColor: 2
-  - color: {r: 0, g: 0.7900574, b: 1, a: 1}
+  - color: {r: 0.31038627, g: 0.44282755, b: 0.8773585, a: 1}
     gameColor: 1
   round: 0
   isPlaying: 0
@@ -2416,7 +2416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.81698704, g: 0.7971698, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
