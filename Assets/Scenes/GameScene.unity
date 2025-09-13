@@ -620,6 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13ac9e1c8bed6405cb44b0cb2b7b080c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameColor: 2
   glassAmount: 10
   getGlassTime: 1
 --- !u!1 &391180023
@@ -936,6 +937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotLightView: {fileID: 1020470793}
   memberView: {fileID: 435715036}
+  colorSetting: []
 --- !u!4 &426388820
 Transform:
   m_ObjectHideFlags: 0
@@ -998,10 +1000,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   root: {fileID: 0}
-  npcCount: 0
-  npcPrefab: {fileID: 0}
-  spawnRangeX: {x: 0, y: 0}
-  spawnRangeY: {x: 0, y: 0}
+  npcCount: 10
+  npcPrefab: {fileID: 7884560477681054790, guid: 78b51a4ab337841819cefdbfdab0d9ae, type: 3}
+  spawnRangeX: {x: 3, y: -3}
+  spawnRangeY: {x: 3, y: -3}
   memberBase: {fileID: 0}
 --- !u!1 &558847506
 GameObject:
@@ -2197,6 +2199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13ac9e1c8bed6405cb44b0cb2b7b080c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameColor: 1
   glassAmount: 10
   getGlassTime: 1
 --- !u!1 &1682393421
@@ -2597,6 +2600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13ac9e1c8bed6405cb44b0cb2b7b080c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameColor: 3
   glassAmount: 10
   getGlassTime: 1
 --- !u!1 &1980302732

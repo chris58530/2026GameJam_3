@@ -10,7 +10,12 @@ public class GameStateManager : Singleton<GameStateManager>
     [SerializeField] private SpotLightView spotLightView;
     [SerializeField] private MemberView memberView;
 
+    public ColorSetting[] colorSetting;
 
+    private void OnEnable()
+    {
+        colorSetting = spotLightView.GetColorSettings();
+    }
 
 
     public void ChangeState(GameState newState)
@@ -79,6 +84,7 @@ public enum GameState
 }
 public enum GameColor
 {
+    none,
     Red,
     Blue,
     Green,

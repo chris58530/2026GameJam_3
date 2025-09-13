@@ -4,10 +4,12 @@ public class Player : MemberBase
 {
     public bool canMove = true;
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
 
@@ -34,5 +36,22 @@ public class Player : MemberBase
         }
     }
 
+    private void UpdateColor(GameColor gameColor)
+    {
+        Color color = GameStateManager.Instance.colorSetting[(int)gameColor].color;
+        spriteRenderer.color = color;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent<Table>(out Table table))
+        {
+            if (table.HasGlass)
+            {
+                GameColor color = table.GetGlass();
+                UpdateColor(color);
+            }
+        }
+    }
 
 }

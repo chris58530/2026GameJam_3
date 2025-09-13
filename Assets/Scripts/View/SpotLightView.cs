@@ -53,6 +53,11 @@ public class SpotLightView : IView
         StopAllCoroutines();
     }
 
+    public ColorSetting[] GetColorSettings()
+    {
+        return colorSettings;
+    }
+
     public override void ResetView()
     {
         Hide();
