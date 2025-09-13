@@ -4,7 +4,7 @@ public class MemberBase : MonoBehaviour
 {
     public int hp;
     public int skillCooldown;
-    public int speed;
+    public float speed;
 
     public virtual void Move(Vector3 direction)
     {
