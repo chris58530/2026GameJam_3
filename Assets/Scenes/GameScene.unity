@@ -809,7 +809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 10
   skillCooldown: 2
-  speed: 0.8
+  speed: 3
   canMove: 1
 --- !u!50 &400901211
 Rigidbody2D:

@@ -3,8 +3,14 @@ using UnityEngine;
 public class Player : MemberBase
 {
     public bool canMove = true;
+    public bool canDash = true;
+    [SerializeField] private float dashDistance = 3f;
+    [SerializeField] private float dashDuration = 0.2f;
+
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private Vector2 lastMoveDirection = Vector2.right;
+    private bool isDashing = false;
 
     private void Start()
     {
@@ -15,22 +21,59 @@ public class Player : MemberBase
 
     public void Update()
     {
-        if (canMove)
+        if (canMove && !isDashing)
             UseArrowMove();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            UseSkill();
     }
 
+    public override void UseSkill()
+    {
+        if (!canDash || isDashing) return;
+
+        StartCoroutine(DashCoroutine());
+    }
+
+    private System.Collections.IEnumerator DashCoroutine()
+    {
+        isDashing = true;
+        canMove = false;
+
+        Vector2 dashTarget = (Vector2)transform.position + lastMoveDirection.normalized * dashDistance;
+        Vector2 startPos = transform.position;
+
+        float elapsedTime = 0f;
+        while (elapsedTime < dashDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float progress = elapsedTime / dashDuration;
+
+            Vector2 currentPos = Vector2.Lerp(startPos, dashTarget, progress);
+            rb.MovePosition(currentPos);
+
+            yield return null;
+        }
+
+        isDashing = false;
+        canMove = true;
+    }
     public void UseArrowMove()
     {
         if (rb == null) return;
 
         Vector2 movement = Vector2.zero;
 
-        if (Input.GetKey(KeyCode.LeftArrow)) movement.x = -1f;
-        if (Input.GetKey(KeyCode.RightArrow)) movement.x = 1f;
-        if (Input.GetKey(KeyCode.UpArrow)) movement.y = 1f;
-        if (Input.GetKey(KeyCode.DownArrow)) movement.y = -1f;
+        if (Input.GetKey(KeyCode.A)) movement.x = -1f;
+        if (Input.GetKey(KeyCode.D)) movement.x = 1f;
+        if (Input.GetKey(KeyCode.W)) movement.y = 1f;
+        if (Input.GetKey(KeyCode.S)) movement.y = -1f;
 
-        // 直接設定速度，不使用AddForce
+        if (movement != Vector2.zero)
+        {
+            lastMoveDirection = movement;
+        }
+
         rb.linearVelocity = movement * speed;
     }
 
