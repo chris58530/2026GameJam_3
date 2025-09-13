@@ -329,7 +329,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 400901208}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &248721539
 MonoBehaviour:
@@ -737,7 +737,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 248721538}
   m_Father: {fileID: 751976964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &400901209
@@ -810,6 +811,8 @@ MonoBehaviour:
   hp: 10
   skillCooldown: 2
   speed: 3
+  isDashing: 0
+  isKnocked: 0
   canMove: 1
   canDash: 1
   dashDistance: 3
@@ -840,7 +843,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &400901212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1676,6 +1679,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   roundIdleTime: 2
   spotLights: {fileID: 264712087}
+  spotLightMoveRangeX: {x: 5, y: -5}
+  spotLightMoveRangeY: {x: 5, y: -5}
   discoBallImage: {fileID: 1764618178}
   spotLightImage: {fileID: 1541771996}
   colorSettings:
@@ -3417,7 +3422,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 248721538}
   - {fileID: 2083082925}
   - {fileID: 426388820}
   - {fileID: 1682393422}

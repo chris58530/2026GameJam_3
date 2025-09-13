@@ -11,6 +11,9 @@ public class SpotLightView : IView
     [SerializeField] private float roundIdleTime;
     [Header("SpotLightObject")]
     [SerializeField] private SpotLight spotLights;
+    [SerializeField] private Vector2 spotLightMoveRangeX;
+    [SerializeField] private Vector2 spotLightMoveRangeY;
+    [SerializeField] private float spotLightMoveDuration = 1.0f;
 
 
     [Header("SpotLightUIImage")]
@@ -57,6 +60,9 @@ public class SpotLightView : IView
             float targetX = originalScale.x * 0.05f;
             spotLightImage.transform.DOScaleX(targetX, waitSec);
 
+            // 開始持續移動SpotLight
+            StartCoroutine(ContinuousMoveSpotLight(waitSec));
+
             yield return new WaitForSeconds(waitSec);
             discoBallImage.color = currentColor.color;
             spotLights.SetColor(currentColor.color);
@@ -64,6 +70,33 @@ public class SpotLightView : IView
             round++;
             yield return new WaitForSeconds(roundIdleTime);
         }
+    }
+
+    IEnumerator ContinuousMoveSpotLight(float duration)
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            MoveSpotLight();
+
+            // 等待這次移動完成，或者剩餘時間不足
+            float waitTime = Mathf.Min(spotLightMoveDuration, duration - elapsedTime);
+            yield return new WaitForSeconds(waitTime);
+
+            elapsedTime += waitTime;
+        }
+    }
+
+    public void MoveSpotLight()
+    {
+        if (spotLights == null) return;
+
+        float targetX = UnityEngine.Random.Range(spotLightMoveRangeX.x, spotLightMoveRangeX.y);
+        float targetY = UnityEngine.Random.Range(spotLightMoveRangeY.x, spotLightMoveRangeY.y);
+        Vector3 targetPosition = new Vector3(targetX, targetY, spotLights.transform.position.z);
+
+        spotLights.transform.DOMove(targetPosition, spotLightMoveDuration).SetEase(Ease.InOutSine);
     }
 
     public void EndColorProgress()
