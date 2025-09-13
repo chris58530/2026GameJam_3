@@ -809,7 +809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 10
   skillCooldown: 2
-  speed: 0.4
+  speed: 0.8
   canMove: 1
 --- !u!50 &400901211
 Rigidbody2D:
@@ -825,7 +825,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1667,11 +1667,11 @@ MonoBehaviour:
   spotLightImage: {fileID: 1541771996}
   colorSettings:
   - color: {r: 0.8207547, g: 0.16647384, b: 0.28793633, a: 1}
-    gameColor: 0
-  - color: {r: 0.18405126, g: 0.8301887, b: 0.34802455, a: 1}
-    gameColor: 2
-  - color: {r: 0.31038627, g: 0.44282755, b: 0.8773585, a: 1}
     gameColor: 1
+  - color: {r: 0.18405126, g: 0.8301887, b: 0.34802455, a: 1}
+    gameColor: 3
+  - color: {r: 0.31038627, g: 0.44282755, b: 0.8773585, a: 1}
+    gameColor: 2
   round: 0
   isPlaying: 0
 --- !u!1 &1243836328

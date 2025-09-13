@@ -30,16 +30,22 @@ public class Player : MemberBase
         if (Input.GetKey(KeyCode.UpArrow)) movement.y = 1f;
         if (Input.GetKey(KeyCode.DownArrow)) movement.y = -1f;
 
-        if (movement != Vector2.zero)
-        {
-            rb.AddForce(movement * speed, ForceMode2D.Force);
-        }
+        // 直接設定速度，不使用AddForce
+        rb.linearVelocity = movement * speed;
     }
 
     private void UpdateColor(GameColor gameColor)
     {
-        Color color = GameStateManager.Instance.colorSetting[(int)gameColor + 1].color;
-        spriteRenderer.color = color;
+        ColorSetting[] color = GameStateManager.Instance.colorSetting;
+        foreach (var c in color)
+        {
+            if (gameColor == c.gameColor)
+            {
+                spriteRenderer.color = c.color;
+                Debug.Log("Player Color Changed to: " + gameColor.ToString());
+                return;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

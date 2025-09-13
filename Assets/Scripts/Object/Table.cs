@@ -15,6 +15,6 @@ public class Table : MonoBehaviour
             glassAmount--;
             return gameColor;
         }
-        else return GameColor.none;
+        else return GameColor.Red;
     }
 }
