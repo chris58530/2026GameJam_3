@@ -1,6 +1,6 @@
 using System;
 using System.Collections;
-using Microsoft.Unity.VisualStudio.Editor;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class SpotLightView : IView
@@ -26,6 +26,7 @@ public class SpotLightView : IView
         round = 0;
         onColorChange = action;
         StartCoroutine(PlayingCoroutine());
+        Debug.Log("StartColorProgress");
     }
 
     IEnumerator PlayingCoroutine()
@@ -37,6 +38,7 @@ public class SpotLightView : IView
             round++;
             ColorSetting currentColor = colorSettings[UnityEngine.Random.Range(0, colorSettings.Length)];
             spotLights.SetColor(currentColor.color);
+            spotLightImage.color = currentColor.color;
             onColorChange?.Invoke(currentColor.gameColor);
         }
     }

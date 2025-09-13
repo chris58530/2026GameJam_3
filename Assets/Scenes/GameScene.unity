@@ -1642,9 +1642,9 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 10
-      inSlope: -9
-      outSlope: -9
+      value: 3
+      inSlope: -2
+      outSlope: -2
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
@@ -1652,8 +1652,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: -9
-      outSlope: -9
+      inSlope: -2
+      outSlope: -2
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -1662,12 +1662,13 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   spotLights: {fileID: 264712087}
+  spotLightImage: {fileID: 1541771996}
   colorSettings:
-  - color: {r: 1, g: 0, b: 0, a: 0}
+  - color: {r: 1, g: 0, b: 0, a: 1}
     gameColor: 0
-  - color: {r: 0.41821158, g: 1, b: 0, a: 0}
+  - color: {r: 0.41821158, g: 1, b: 0, a: 1}
     gameColor: 2
-  - color: {r: 0, g: 0.7900574, b: 1, a: 0}
+  - color: {r: 0, g: 0.7900574, b: 1, a: 1}
     gameColor: 1
   round: 0
   isPlaying: 0
