@@ -2,21 +2,18 @@ using UnityEngine;
 
 public class Player : MemberBase
 {
-    public bool canMove = true;
-    public bool canDash = true;
+
     [SerializeField] private float dashDistance = 3f;
     [SerializeField] private float dashDuration = 0.2f;
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Vector2 lastMoveDirection = Vector2.right;
-    private bool isDashing = false;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
     }
 
     public void Update()
@@ -99,6 +96,13 @@ public class Player : MemberBase
             {
                 GameColor color = table.GetGlass();
                 UpdateColor(color);
+            }
+        }
+        if (collision.TryGetComponent<MemberBase>(out MemberBase member))
+        {
+            if (member != this)
+            {
+                Knock(this.transform);
             }
         }
     }
