@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MemberBase
@@ -9,6 +10,7 @@ public class Player : MemberBase
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Vector2 lastMoveDirection = Vector2.right;
+    public Action onGameOver;
 
     private void Start()
     {
@@ -23,6 +25,16 @@ public class Player : MemberBase
 
         if (Input.GetKeyDown(KeyCode.Space))
             UseSkill();
+    }
+
+    public void Init(Action onGameOver)
+    {
+        this.onGameOver += onGameOver;
+    }
+
+    public override void Die()
+    {
+        onGameOver?.Invoke();
     }
 
     public override void UseSkill()
@@ -104,6 +116,18 @@ public class Player : MemberBase
             {
                 Knock(this.transform);
             }
+        }
+        if (collision.TryGetComponent<SpotLight>(out SpotLight spotLight))
+        {
+            isInSpotLight = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent<SpotLight>(out SpotLight spotLight))
+        {
+            isInSpotLight = false;
         }
     }
 

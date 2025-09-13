@@ -329,7 +329,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 400901208}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &248721539
 MonoBehaviour:
@@ -737,8 +737,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 248721538}
+  m_Children: []
   m_Father: {fileID: 751976964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &400901209
@@ -944,6 +943,7 @@ MonoBehaviour:
   spotLightView: {fileID: 1020470793}
   memberView: {fileID: 435715036}
   colorSetting: []
+  isCheckPoint: 0
 --- !u!4 &426388820
 Transform:
   m_ObjectHideFlags: 0
@@ -1007,6 +1007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   root: {fileID: 0}
   npcCount: 10
+  player: {fileID: 400901210}
   npcPrefab: {fileID: 7884560477681054790, guid: 78b51a4ab337841819cefdbfdab0d9ae, type: 3}
   spawnRangeX: {x: 3, y: -3}
   spawnRangeY: {x: 3, y: -3}
@@ -1658,18 +1659,18 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 3
-      inSlope: -2
-      outSlope: -2
+      value: 5
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 1
-      inSlope: -2
-      outSlope: -2
+      value: 5
+      inSlope: 0
+      outSlope: 0
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -1681,6 +1682,7 @@ MonoBehaviour:
   spotLights: {fileID: 264712087}
   spotLightMoveRangeX: {x: 5, y: -5}
   spotLightMoveRangeY: {x: 5, y: -5}
+  spotLightMoveDuration: 3
   discoBallImage: {fileID: 1764618178}
   spotLightImage: {fileID: 1541771996}
   colorSettings:
@@ -3423,6 +3425,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2083082925}
+  - {fileID: 248721538}
   - {fileID: 426388820}
   - {fileID: 1682393422}
   - {fileID: 435715035}

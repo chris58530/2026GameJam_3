@@ -11,6 +11,7 @@ public class GameStateManager : Singleton<GameStateManager>
     [SerializeField] private MemberView memberView;
 
     public ColorSetting[] colorSetting;
+    public bool isCheckPoint = false;
 
     private void OnEnable()
     {
@@ -58,6 +59,7 @@ public class GameStateManager : Singleton<GameStateManager>
 
         //memberView
         memberView.StartNPCSpawn(onMemberDie: OnNPCDie);
+        memberView.Init(() => ChangeState(GameState.GameOver));
     }
 
     public void OnGameOver()
@@ -72,6 +74,19 @@ public class GameStateManager : Singleton<GameStateManager>
         if (GameProxy.GetCurrentMember() <= 0)
         {
             ChangeState(GameState.GameOver);
+        }
+    }
+
+    public void OnCheckPoint(GameColor color, bool isInSpotLight, MemberBase member)
+    {
+        if (color == CurrentColor && isInSpotLight)
+        {
+            Debug.Log("CheckPoint Success");
+        }
+        else
+        {
+            Debug.Log("CheckPoint Failed" + member.name);
+            member.Die();
         }
     }
 }

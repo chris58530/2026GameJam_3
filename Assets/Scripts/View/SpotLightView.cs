@@ -49,7 +49,6 @@ public class SpotLightView : IView
             ColorSetting currentColor = colorSettings[UnityEngine.Random.Range(0, colorSettings.Length)];
             spotLights.SetColor(Color.white);
             spotLightImage.color = currentColor.color;
-            onColorChange?.Invoke(currentColor.gameColor);
             discoBallImage.color = Color.white;
 
             // 重置到原本大小，保持y和z不變
@@ -64,6 +63,7 @@ public class SpotLightView : IView
             StartCoroutine(ContinuousMoveSpotLight(waitSec));
 
             yield return new WaitForSeconds(waitSec);
+            onColorChange?.Invoke(currentColor.gameColor);
             discoBallImage.color = currentColor.color;
             spotLights.SetColor(currentColor.color);
 

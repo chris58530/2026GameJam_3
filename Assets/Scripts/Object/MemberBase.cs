@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -11,19 +12,20 @@ public class MemberBase : MonoBehaviour
     public bool isKnocked;
     public bool canMove = true;
     public bool canDash = true;
+    public bool isInSpotLight;
+    public Action<GameColor, bool, MemberBase> checkPointAction;
+    public GameColor gameColor;
     public virtual void Move(Vector3 direction)
     {
     }
-    public virtual void TakeDamage(int damage)
-    {
-        hp -= damage;
-        if (hp <= 0)
-        {
-            Die();
-        }
-    }
+
     public virtual void Die()
     {
+    }
+
+    public virtual void OnCheckPoint()
+    {
+        checkPointAction?.Invoke(gameColor, isInSpotLight, this);
     }
 
     public virtual void UseSkill()
