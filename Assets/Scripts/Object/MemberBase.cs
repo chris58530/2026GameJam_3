@@ -21,4 +21,20 @@ public class MemberBase : MonoBehaviour
     public virtual void Die()
     {
     }
+    // public override void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if (other.gameObject.TryGetComponent<Table>(out Table table))
+    //     {
+    //         if (table.HasGlass)
+    //         {
+    //             table.AddQueue(this);
+    //         }
+    //     }
+    // }
+    // public override void OnTriggerExit2D(Collider2D other)
+    // {
+    //     // if (other.gameObject.TryGetComponent<Table>(out Table table))
+    //     // {
+    //     // }
+    // }
 }
