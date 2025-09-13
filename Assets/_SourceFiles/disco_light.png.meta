@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fa41d8cc022a20943a77157261b06705
+guid: a7685986d44a8504c86084fd9cba1a60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8870012635816948518
-    second: Table_red-04_0
+      213: 7995980950270189334
+    second: disco_light_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Table_red-04_0
+      name: disco_light_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
-        width: 898
-        height: 667
+        x: 3
+        y: 2
+        width: 835
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adc87e8c08267e480800000000000000
-      internalID: -8870012635816948518
+      spriteID: 61f15ab4f4e67fe60800000000000000
+      internalID: 7995980950270189334
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Table_red-04_0: -8870012635816948518
+      disco_light_0: 7995980950270189334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,6 +8,15 @@ TextureImporter:
   - first:
       213: 2101523458309669741
     second: jukebox_light_1
+  - first:
+      213: 3317007235600436109
+    second: jukebox_light_2
+  - first:
+      213: 8441867993674383247
+    second: jukebox_light_3
+  - first:
+      213: -7333237903773630822
+    second: jukebox_light_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,10 +141,10 @@ TextureImporter:
       name: jukebox_light_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 169
-        width: 219
-        height: 143
+        x: 71
+        y: 215
+        width: 77
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,6 +163,50 @@ TextureImporter:
       name: jukebox_light_1
       rect:
         serializedVersion: 2
+        x: 202
+        y: 215
+        width: 77
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63c2b3737c1a2d10800000000000000
+      internalID: 2101523458309669741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jukebox_light_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 169
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b4d5ba180680e20800000000000000
+      internalID: 3317007235600436109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jukebox_light_3
+      rect:
+        serializedVersion: 2
         x: 114
         y: 92
         width: 122
@@ -166,8 +219,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d63c2b3737c1a2d10800000000000000
-      internalID: 2101523458309669741
+      spriteID: f8f73bb963a872570800000000000000
+      internalID: 8441867993674383247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jukebox_light_4
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 169
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e742ccafa1b3a90800000000000000
+      internalID: -7333237903773630822
       vertices: []
       indices: 
       edges: []
@@ -188,6 +263,9 @@ TextureImporter:
     nameFileIdTable:
       jukebox_light_0: 4486456371924664398
       jukebox_light_1: 2101523458309669741
+      jukebox_light_2: 3317007235600436109
+      jukebox_light_3: 8441867993674383247
+      jukebox_light_4: -7333237903773630822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
