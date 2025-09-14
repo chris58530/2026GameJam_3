@@ -21,6 +21,7 @@ public class Player : MemberBase
 
     public void Init(Action onGameOver)
     {
+        transform.position = Vector2.zero;
         this.onGameOver += onGameOver;
         canMove = true;
         canDash = true;
@@ -103,6 +104,8 @@ public class Player : MemberBase
                 return;
             }
         }
+        AudioManager.Instance.PlaySFX("drink");
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

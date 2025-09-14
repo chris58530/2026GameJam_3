@@ -3,14 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class AudioManager:Singleton<AudioManager>
+public class AudioManager : Singleton<AudioManager>
 {
-    public Sound[] BGMSounds, sfxSounds1,sfxSounds2;
+    public Sound[] BGMSounds, sfxSounds1, sfxSounds2;
     public AudioSource BGMSource, sfxSource1, sfxSource2;
 
     private void Start()
     {
         PlayBGM("BGM");
+    }
+    public void StopAll()
+    {
+        BGMSource.Stop();
+        sfxSource1.Stop();
+        sfxSource2.Stop();
     }
     public void PlayBGM(string name)
     {

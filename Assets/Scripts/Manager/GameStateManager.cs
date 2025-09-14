@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 
 public class GameStateManager : Singleton<GameStateManager>
@@ -35,6 +36,7 @@ public class GameStateManager : Singleton<GameStateManager>
                 Debug.Log("========== MainMenu ");
                 startCanvas.ShowMenu();
                 RestSetAllMemberColor();
+                AudioManager.Instance.PlayBGM("MenuBGM");
                 break;
             case GameState.PreStart:
                 Debug.Log("========== PreStart ");
@@ -43,10 +45,14 @@ public class GameStateManager : Singleton<GameStateManager>
             case GameState.Playing:
                 Debug.Log("========== Playing ");
                 OnPlayingState();
+                AudioManager.Instance.PlayBGM("GameBGM");
+                AudioManager.Instance.PlaySFX("char");
+
                 break;
             case GameState.GameOver:
                 Debug.Log("========== GameOver ");
                 OnGameOver();
+                AudioManager.Instance.PlaySFX("GameOver");
                 break;
         }
     }
@@ -82,7 +88,11 @@ public class GameStateManager : Singleton<GameStateManager>
         spotLightView.ResetView();
         memberView.ResetView();
         bartendView.ResetView();
-        ChangeState(GameState.MainMenu);
+        DOVirtual.DelayedCall(2f, () =>
+        {
+            AudioManager.Instance.StopAll();
+            ChangeState(GameState.MainMenu);
+        }).SetId(GetHashCode());
     }
 
     //每回合開始分發酒杯數量 數量為目前member數量 - 1

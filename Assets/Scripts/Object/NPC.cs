@@ -10,20 +10,22 @@ public class NPC : MemberBase
     public Table targetTable;        // 目標桌子
     public MemberBase huntingTarget; // 狩獵目標
     public SpotLight targetSpotLight; // 目標聚光燈
+    public GameObject targetGlass;   // 目標玻璃
 
     [Header("NPC Settings")]
     public float moveSpeed = 2f;     // 移動速度
     [SerializeField] private float dashDistance = 3f;    // 衝刺距離
     [SerializeField] private float dashDuration = 0.2f;  // 衝刺時間
+    [SerializeField] private bool canSearchGlass = false; // 是否可以尋找獨立的玻璃物件
 
     private Vector2 lastMoveDirection = Vector2.right;    // 記錄最後移動方向
+    private Vector3 lastNPCPosition; // 記錄最後位置
+    private GameColor lastNPCColor;  // 記錄最後顏色
 
     public void Init(Action action)
     {
         onDie = action;
-        // 自動尋找聚光燈
         targetSpotLight = FindFirstObjectByType<SpotLight>();
-        Debug.Log($"[NPC Init] {name}: 初始化完成");
     }
 
     private void Update()
@@ -54,42 +56,52 @@ public class NPC : MemberBase
         }
     }
 
-    // 各狀態的更新方法
     private void UpdateSearchingTable()
     {
-        Debug.Log("[NPC] " + name + ": 搜尋桌子中...");
-
-        if (canMove && !isDashing && !isKnocked)
+        if (!canMove || isDashing || isKnocked)
         {
-            // 獲取目標顏色
-            GameColor targetColor = GameStateManager.Instance.NextColor;
-            Debug.Log($"[NPC] {name}: 目標顏色 - {targetColor}");
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
 
+        GameColor targetColor = GameStateManager.Instance.NextColor;
 
-            // 尋找匹配顏色的桌子
-            Table foundTable = FindTableWithColor(targetColor);
+        // 檢查是否已經有正確的顏色
+        if (gameColor != GameColor.white && gameColor == targetColor)
+        {
+            ChangeState(NPCState.MovingToSpotLight);
+            return;
+        }
 
-            if (foundTable != null)
+        // 尋找匹配顏色的桌子
+        Table foundTable = FindTableWithColor(targetColor);
+        if (foundTable != null)
+        {
+            SetTargetTable(foundTable);
+            ChangeState(NPCState.MovingToTable);
+        }
+        else if (canSearchGlass)
+        {
+            // 如果沒有找到桌子且開關開啟，尋找獨立的玻璃
+            GameObject foundGlass = FindGlassWithTargetColor();
+            if (foundGlass != null)
             {
-                // 找到匹配的桌子，設定為目標並切換狀態
-                SetTargetTable(foundTable);
+                MoveToGlass(foundGlass);
                 ChangeState(NPCState.MovingToTable);
-                Debug.Log($"[NPC] {name}: 找到目標桌子 {foundTable.name}，切換到移動狀態");
             }
             else
             {
-                // 沒找到匹配的桌子，做待機移動
-                Debug.Log($"[NPC] {name}: 沒有找到顏色 {targetColor} 的桌子，繼續搜尋");
-                DoIdleMovement();
+                // 找不到玻璃就去衝撞玩家
+                StartHuntingMode();
             }
         }
         else
         {
-            rb.linearVelocity = Vector2.zero;
+            // 關閉玻璃搜尋時直接去衝撞玩家
+            StartHuntingMode();
         }
     }
 
-    // 尋找特定顏色的桌子
     private Table FindTableWithColor(GameColor targetColor)
     {
         Table[] allTables = FindObjectsByType<Table>(FindObjectsSortMode.None);
@@ -98,27 +110,47 @@ public class NPC : MemberBase
 
         foreach (Table table in allTables)
         {
-            // 檢查桌子是否有玻璃且顏色匹配
             if (table.HasGlass && table.gameColor == targetColor)
             {
                 float distance = Vector2.Distance(transform.position, table.transform.position);
-
                 if (distance < closestDistance)
                 {
                     closestDistance = distance;
                     closestTable = table;
                 }
-
-                Debug.Log($"[NPC] {name}: 找到匹配桌子 {table.name}，顏色: {table.gameColor}，距離: {distance}");
             }
         }
 
-        if (closestTable != null)
+        return closestTable;
+    }
+
+    private GameObject FindGlassWithTargetColor()
+    {
+        GameColor targetColor = GameStateManager.Instance.NextColor;
+        Glass[] allGlasses = FindObjectsByType<Glass>(FindObjectsSortMode.None);
+        GameObject closestGlass = null;
+        float closestDistance = float.MaxValue;
+
+        foreach (Glass glass in allGlasses)
         {
-            Debug.Log($"[NPC] {name}: 選定最近的桌子 {closestTable.name}，距離: {closestDistance}");
+            if (glass.color == targetColor)
+            {
+                float distance = Vector2.Distance(transform.position, glass.transform.position);
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestGlass = glass.gameObject;
+                }
+            }
         }
 
-        return closestTable;
+        return closestGlass;
+    }
+
+    private void MoveToGlass(GameObject glass)
+    {
+        targetGlass = glass;
+        targetTable = null;
     }
 
     private void DoIdleMovement()
@@ -144,50 +176,111 @@ public class NPC : MemberBase
 
     private void UpdateMovingToTable()
     {
-        if (targetTable != null && canMove && !isDashing && !isKnocked)
-        {
-            Vector2 direction = (targetTable.transform.position - transform.position).normalized;
-            lastMoveDirection = direction; // 更新移動方向
-            rb.linearVelocity = direction * moveSpeed;
-
-            // 檢查是否接近目標
-            float distance = Vector2.Distance(transform.position, targetTable.transform.position);
-
-            // 如果距離適中且可以衝刺，隨機使用衝刺加速移動
-            if (distance > 2f && distance < 5f && canDash && UnityEngine.Random.Range(0f, 1f) < 0.02f) // 2% 機率每幀
-            {
-                UseSkill();
-            }
-
-            if (distance < 0.5f)
-            {
-                rb.linearVelocity = Vector2.zero;
-                Debug.Log($"[NPC] {name}: 到達桌子");
-
-                // 檢查是否成功拿到顏色
-                if (gameColor != GameColor.white && gameColor == GameStateManager.Instance.NextColor)
-                {
-                    // 成功拿到目標顏色，移動到聚光燈
-                    Debug.Log($"[NPC] {name}: 成功獲得目標顏色 {gameColor}，移動到聚光燈");
-                    ChangeState(NPCState.MovingToSpotLight);
-                }
-                else
-                {
-                    // 沒有獲得目標顏色，進入狩獵模式
-                    Debug.Log($"[NPC] {name}: 沒有獲得目標顏色，進入狩獵模式");
-                    StartHuntingMode();
-                }
-            }
-        }
-        else if (targetTable == null)
+        if (!canMove || isDashing || isKnocked)
         {
             rb.linearVelocity = Vector2.zero;
-            Debug.LogWarning($"[NPC] {name}: 沒有設定目標桌子，進入狩獵模式");
-            StartHuntingMode();
+            return;
+        }
+
+        // 處理移動到玻璃
+        if (targetGlass != null)
+        {
+            HandleGlassMovement();
+            return;
+        }
+
+        // 處理移動到桌子
+        if (targetTable != null)
+        {
+            HandleTableMovement();
+            return;
+        }
+
+        // 沒有目標，進入狩獵模式
+        StartHuntingMode();
+    }
+
+    private void HandleGlassMovement()
+    {
+        if (targetGlass == null)
+        {
+            ChangeState(NPCState.SearchingTable);
+            return;
+        }
+
+        MoveToTarget(targetGlass.transform.position);
+
+        // 檢查是否獲得目標顏色
+        GameColor targetColor = GameStateManager.Instance.NextColor;
+        if (gameColor != GameColor.white && gameColor == targetColor)
+        {
+            rb.linearVelocity = Vector2.zero;
+            targetGlass = null;
+            ChangeState(NPCState.MovingToSpotLight);
         }
     }
 
-    // 開始狩獵模式：尋找有目標顏色的成員進行攻擊
+    private void HandleTableMovement()
+    {
+        // 檢查桌子是否還有玻璃
+        if (!targetTable.HasGlass)
+        {
+            targetTable = null;
+
+            // 只有在開關開啟時才尋找獨立的玻璃
+            if (canSearchGlass)
+            {
+                GameObject foundGlass = FindGlassWithTargetColor();
+                if (foundGlass != null)
+                {
+                    MoveToGlass(foundGlass);
+                }
+                else
+                {
+                    StartHuntingMode();
+                }
+            }
+            else
+            {
+                StartHuntingMode();
+            }
+            return;
+        }
+
+        // 檢查桌子顏色是否匹配
+        GameColor targetColor = GameStateManager.Instance.NextColor;
+        if (targetTable.gameColor != targetColor)
+        {
+            targetTable = null;
+            ChangeState(NPCState.SearchingTable);
+            return;
+        }
+
+        MoveToTarget(targetTable.transform.position);
+
+        // 檢查是否獲得目標顏色
+        if (gameColor != GameColor.white && gameColor == targetColor)
+        {
+            rb.linearVelocity = Vector2.zero;
+            ChangeState(NPCState.MovingToSpotLight);
+        }
+    }
+
+    private void MoveToTarget(Vector3 targetPosition)
+    {
+        Vector2 direction = (targetPosition - transform.position).normalized;
+        lastMoveDirection = direction;
+        rb.linearVelocity = direction * moveSpeed;
+
+        float distance = Vector2.Distance(transform.position, targetPosition);
+
+        // 隨機使用衝刺加速
+        if (distance > 2f && distance < 5f && canDash && UnityEngine.Random.Range(0f, 1f) < 0.01f)
+        {
+            UseSkill();
+        }
+    }
+
     private void StartHuntingMode()
     {
         GameColor targetColor = GameStateManager.Instance.NextColor;
@@ -197,45 +290,48 @@ public class NPC : MemberBase
         {
             SetHuntingTarget(targetMember);
             ChangeState(NPCState.HuntingTarget);
-            Debug.Log($"[NPC] {name}: 找到狩獵目標 {targetMember.name}，顏色: {targetColor}");
         }
         else
         {
-            Debug.Log($"[NPC] {name}: 沒有找到有顏色 {targetColor} 的目標，回到搜尋狀態");
             ChangeState(NPCState.SearchingTable);
         }
     }
 
-    // 尋找有特定顏色的成員
     private MemberBase FindMemberWithColor(GameColor targetColor)
     {
-        MemberBase[] allMembers = new MemberBase[0];
         System.Collections.Generic.List<MemberBase> memberList = new System.Collections.Generic.List<MemberBase>();
 
-        // 檢查玩家
+        // 優先檢查玩家
         Player player = FindFirstObjectByType<Player>();
-        if (player != null && player.gameColor == targetColor && player != this)
+        if (player != null && player != this)
         {
-            memberList.Add(player);
-        }
-
-        // 檢查其他NPC
-        NPC[] npcs = FindObjectsByType<NPC>(FindObjectsSortMode.None);
-        foreach (NPC npc in npcs)
-        {
-            if (npc != this && npc.gameColor == targetColor)
+            // 如果玩家有目標顏色，優先攻擊
+            if (player.gameColor == targetColor)
             {
-                memberList.Add(npc);
+                return player;
+            }
+            // 如果玩家沒有目標顏色但不是白色，也可以攻擊
+            else if (player.gameColor != GameColor.white)
+            {
+                memberList.Add(player);
             }
         }
 
-        // 如果有找到目標，隨機選擇一個
+        // // 檢查其他NPC
+        // NPC[] npcs = FindObjectsByType<NPC>(FindObjectsSortMode.None);
+        // foreach (NPC npc in npcs)
+        // {
+        //     if (npc != this && npc.gameColor == targetColor)
+        //     {
+        //         memberList.Add(npc);
+        //     }
+        // }
+
+        // 如果有其他可攻擊的目標，隨機選擇一個
         if (memberList.Count > 0)
         {
             int randomIndex = UnityEngine.Random.Range(0, memberList.Count);
-            MemberBase selectedTarget = memberList[randomIndex];
-            Debug.Log($"[NPC] {name}: 從 {memberList.Count} 個目標中選擇 {selectedTarget.name}");
-            return selectedTarget;
+            return memberList[randomIndex];
         }
 
         return null;
@@ -245,16 +341,13 @@ public class NPC : MemberBase
     {
         if (gameColor == GameColor.white)
         {
-            Debug.Log($"[NPC] {name}: 顏色為白色，無法進入聚光燈，回到搜尋狀態");
             ChangeState(NPCState.SearchingTable);
             return;
         }
 
-        // 檢查自己的顏色是否與目標顏色不一樣
         GameColor targetColor = GameStateManager.Instance.NextColor;
         if (gameColor != targetColor)
         {
-            Debug.Log($"[NPC] {name}: 自己的顏色 {gameColor} 與目標顏色 {targetColor} 不符，進入狩獵模式");
             StartHuntingMode();
             return;
         }
@@ -262,68 +355,44 @@ public class NPC : MemberBase
         if (targetSpotLight != null && canMove && !isDashing && !isKnocked)
         {
             Vector2 direction = (targetSpotLight.transform.position - transform.position).normalized;
-            lastMoveDirection = direction; // 更新移動方向
-            rb.linearVelocity = direction * moveSpeed;
+            lastMoveDirection = direction;
 
-            // 檢查是否到達聚光燈
             if (isInSpotLight)
             {
-                // 在聚光燈內，但仍然跟隨聚光燈移動
+                // 在聚光燈內跟隨移動
                 float distanceToCenter = Vector2.Distance(transform.position, targetSpotLight.transform.position);
-
-                // 如果距離聚光燈中心太遠，繼續移動靠近
-                if (distanceToCenter > 0.5f)
-                {
-                    Vector2 followDirection = (targetSpotLight.transform.position - transform.position).normalized;
-                    lastMoveDirection = followDirection; // 更新移動方向
-                    rb.linearVelocity = followDirection * (moveSpeed * 0.8f); // 稍微慢一點跟隨
-                    Debug.Log($"[NPC] {name}: 在聚光燈內跟隨移動，距離中心: {distanceToCenter:F2}");
-                }
-                else
-                {
-                    // 很接近中心，保持輕微跟隨
-                    Vector2 followDirection = (targetSpotLight.transform.position - transform.position).normalized;
-                    lastMoveDirection = followDirection; // 更新移動方向
-                    rb.linearVelocity = followDirection * (moveSpeed * 0.3f); // 更慢的跟隨速度
-                    Debug.Log($"[NPC] {name}: 在聚光燈中心附近，輕微跟隨");
-                }
+                float followSpeed = distanceToCenter > 0.5f ? moveSpeed * 0.8f : moveSpeed * 0.3f;
+                rb.linearVelocity = direction * followSpeed;
             }
             else
             {
-                // 還沒到達聚光燈，全速移動
-                float distance = Vector2.Distance(transform.position, targetSpotLight.transform.position);
+                // 移動到聚光燈
+                rb.linearVelocity = direction * moveSpeed;
 
-                // 如果距離較遠且可以衝刺，使用衝刺加速
-                if (distance > 3f && canDash && UnityEngine.Random.Range(0f, 1f) < 0.03f) // 3% 機率每幀
+                float distance = Vector2.Distance(transform.position, targetSpotLight.transform.position);
+                if (distance > 3f && canDash && UnityEngine.Random.Range(0f, 1f) < 0.03f)
                 {
                     UseSkill();
                 }
-
-                Debug.Log($"[NPC] {name}: 移動到聚光燈中");
             }
         }
         else if (targetSpotLight == null)
         {
             rb.linearVelocity = Vector2.zero;
-            Debug.LogWarning($"[NPC] {name}: 沒有找到聚光燈");
         }
     }
 
     private void UpdateWaitingForTurn()
     {
-        // 等待狀態，但如果在聚光燈內需要跟隨移動
         if (rb != null)
         {
             if (isInSpotLight && targetSpotLight != null)
             {
-                // 在聚光燈內時，輕微跟隨聚光燈移動
                 Vector2 followDirection = (targetSpotLight.transform.position - transform.position).normalized;
-                rb.linearVelocity = followDirection * (moveSpeed * 0.2f); // 很慢的跟隨速度
-                Debug.Log($"[NPC] {name}: 等待狀態中跟隨聚光燈移動");
+                rb.linearVelocity = followDirection * (moveSpeed * 0.2f);
             }
             else
             {
-                // 不在聚光燈內，完全停止
                 rb.linearVelocity = Vector2.zero;
             }
         }
@@ -334,44 +403,39 @@ public class NPC : MemberBase
         if (huntingTarget != null && canMove && !isDashing && !isKnocked)
         {
             Vector2 direction = (huntingTarget.transform.position - transform.position).normalized;
-            lastMoveDirection = direction; // 更新移動方向
+            lastMoveDirection = direction;
             rb.linearVelocity = direction * moveSpeed;
 
-            // 檢查是否接近目標，可以使用技能
             float distance = Vector2.Distance(transform.position, huntingTarget.transform.position);
             if (distance < 2f && canDash)
             {
-                UseSkill(); // 使用衝刺技能
+                UseSkill();
             }
         }
         else if (huntingTarget == null)
         {
             rb.linearVelocity = Vector2.zero;
-            Debug.LogWarning($"[NPC] {name}: 沒有設定狩獵目標");
         }
     }
 
-    // 提供設定目標的公開方法
     public void SetTargetTable(Table table)
     {
         targetTable = table;
-        Debug.Log($"[NPC] {name}: 設定目標桌子 {(table != null ? table.name : "null")}");
     }
 
     public void SetHuntingTarget(MemberBase target)
     {
         huntingTarget = target;
-        Debug.Log($"[NPC] {name}: 設定狩獵目標 {(target != null ? target.name : "null")}");
     }
 
     public override void OnCheckPoint(GameColor color)
     {
         if (color != gameColor)
         {
-            Debug.Log($"[NPC] {name}: 顏色不匹配，死亡");
             Die();
         }
     }
+
     public override void Die()
     {
         ResetView();
@@ -384,9 +448,11 @@ public class NPC : MemberBase
         base.ResetView();
         targetTable = null;
         huntingTarget = null;
+        targetGlass = null;
         ChangeState(NPCState.SearchingTable);
-        Debug.Log($"[NPC] {name}: 重置狀態");
+        Destroy(gameObject);
     }
+
     public override void UpdateColor(GameColor gameColor)
     {
         this.gameColor = gameColor;
@@ -396,15 +462,15 @@ public class NPC : MemberBase
             if (gameColor == c.gameColor)
             {
                 spriteRenderer.color = c.color;
-                Debug.Log("NPC Color Changed to: " + gameColor.ToString());
                 return;
             }
         }
+        AudioManager.Instance.PlaySFX("drink");
+
     }
 
     public void ChangeState(NPCState newState)
     {
-        Debug.Log($"[NPC State] {name}: 狀態變更 {NPCState} -> {newState}");
         NPCState = newState;
 
         switch (newState)
@@ -430,51 +496,27 @@ public class NPC : MemberBase
     // 各狀態進入時的處理方法
     private void OnEnterSearchingTable()
     {
-        Debug.Log($"[NPC] {name}: 進入搜尋桌子狀態");
-        // 清除之前的目標
-        // 可以在這裡添加搜尋邏輯或等待外部指令
+        targetTable = null;
+        targetGlass = null;
+        huntingTarget = null;
     }
 
     private void OnEnterMovingToTable()
     {
-        Debug.Log($"[NPC] {name}: 進入移動到桌子狀態");
-        // 開始移動到指定的桌子
-        // 外部需要設定目標桌子
+        if (targetTable != null)
+        {
+            lastNPCPosition = transform.position;
+            lastNPCColor = gameColor;
+        }
     }
 
     private void OnEnterMovingToSpotLight()
     {
-        Debug.Log($"[NPC] {name}: 進入移動到聚光燈狀態");
-
-        // 確保有聚光燈目標
-        if (targetSpotLight == null)
-        {
-            targetSpotLight = FindFirstObjectByType<SpotLight>();
-            Debug.Log($"[NPC] {name}: 重新尋找聚光燈目標");
-        }
-
-        // 清除桌子目標，專注於聚光燈
-        targetTable = null;
-
-        // 確認當前顏色
-        Debug.Log($"[NPC] {name}: 當前顏色 {gameColor}，開始移動到聚光燈");
-
-        // 不管是否已經在聚光燈內，都保持在這個狀態以便跟隨聚光燈移動
-        // UpdateMovingToSpotLight 方法會處理跟隨邏輯
-        if (isInSpotLight)
-        {
-            Debug.Log($"[NPC] {name}: 已經在聚光燈內，將跟隨聚光燈移動");
-        }
-        else
-        {
-            Debug.Log($"[NPC] {name}: 開始移動到聚光燈");
-        }
+        targetGlass = null;
     }
 
     private void OnEnterWaitingForTurn()
     {
-        Debug.Log($"[NPC] {name}: 進入等待狀態");
-        // 停止移動，等待下一輪
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
@@ -483,9 +525,7 @@ public class NPC : MemberBase
 
     private void OnEnterHuntingTarget()
     {
-        Debug.Log($"[NPC] {name}: 進入狩獵狀態");
-        // 開始狩獵模式
-        // 外部需要設定狩獵目標
+        // 狩獵模式初始化
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -495,7 +535,7 @@ public class NPC : MemberBase
             if (table.HasGlass)
             {
                 GameColor color = table.GetGlass();
-                gameColor = color; // 設定NPC的顏色
+                gameColor = color;
                 UpdateColor(color);
             }
         }
@@ -504,7 +544,6 @@ public class NPC : MemberBase
             if (member != this)
             {
                 member.Knock(this.transform);
-                Debug.Log($"[NPC] {name}: 碰撞到 {member.name}，並擊退對方");
             }
         }
         if (collision.TryGetComponent<SpotLight>(out SpotLight spotLight))
@@ -525,12 +564,9 @@ public class NPC : MemberBase
     public override void UseSkill()
     {
         if (!canDash || isDashing) return;
-
-        Debug.Log($"[NPC] {name}: 使用衝刺技能，方向: {lastMoveDirection}");
         StartCoroutine(DashCoroutine());
     }
 
-    // NPC 的衝刺協程
     private System.Collections.IEnumerator DashCoroutine()
     {
         isDashing = true;
@@ -553,8 +589,6 @@ public class NPC : MemberBase
 
         isDashing = false;
         canMove = true;
-
-        Debug.Log($"[NPC] {name}: 衝刺完成");
     }
 }
 public enum NPCState
