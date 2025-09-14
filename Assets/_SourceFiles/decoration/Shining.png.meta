@@ -1,0 +1,5317 @@
+fileFormatVersion: 2
+guid: d94964b36efd2664cb61d780dbef226e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6062853460796318292
+    second: Shining_0
+  - first:
+      213: 8438736506767670946
+    second: Shining_1
+  - first:
+      213: -7786789557385828733
+    second: Shining_2
+  - first:
+      213: -1626373711239691120
+    second: Shining_3
+  - first:
+      213: 5756664572094741008
+    second: Shining_4
+  - first:
+      213: 5461349078063470891
+    second: Shining_5
+  - first:
+      213: -8093877651961527599
+    second: Shining_6
+  - first:
+      213: 7071615187882703686
+    second: Shining_7
+  - first:
+      213: -1429542821461289019
+    second: Shining_8
+  - first:
+      213: 2171792190143127000
+    second: Shining_9
+  - first:
+      213: -975442598304897964
+    second: Shining_10
+  - first:
+      213: 4702879817663270572
+    second: Shining_11
+  - first:
+      213: -2429565616092960846
+    second: Shining_12
+  - first:
+      213: 4595925247857087070
+    second: Shining_13
+  - first:
+      213: -6967744315355763747
+    second: Shining_14
+  - first:
+      213: 4970053647302998044
+    second: Shining_15
+  - first:
+      213: -3370903727586681771
+    second: Shining_16
+  - first:
+      213: 7808471001110431390
+    second: Shining_17
+  - first:
+      213: -6423825328613579343
+    second: Shining_18
+  - first:
+      213: -408125569452953889
+    second: Shining_19
+  - first:
+      213: -5095410496612633885
+    second: Shining_20
+  - first:
+      213: -3859291880456114490
+    second: Shining_21
+  - first:
+      213: -795699789685936523
+    second: Shining_22
+  - first:
+      213: 7338420372715479501
+    second: Shining_23
+  - first:
+      213: 3719836241106757282
+    second: Shining_24
+  - first:
+      213: 865297380105324640
+    second: Shining_25
+  - first:
+      213: 2035458001069177229
+    second: Shining_26
+  - first:
+      213: 3653691242267815391
+    second: Shining_27
+  - first:
+      213: 3371828193350343226
+    second: Shining_28
+  - first:
+      213: -5134800328648636672
+    second: Shining_29
+  - first:
+      213: 7282380163242137151
+    second: Shining_30
+  - first:
+      213: -3207785651971943723
+    second: Shining_31
+  - first:
+      213: -2740980279099103789
+    second: Shining_32
+  - first:
+      213: -5133495170695685495
+    second: Shining_33
+  - first:
+      213: -6331979558676242054
+    second: Shining_34
+  - first:
+      213: 9219374209023632863
+    second: Shining_35
+  - first:
+      213: 2388661218828945134
+    second: Shining_36
+  - first:
+      213: -3196711378816562628
+    second: Shining_37
+  - first:
+      213: 5978260123587485607
+    second: Shining_38
+  - first:
+      213: 2014796702007101257
+    second: Shining_39
+  - first:
+      213: 7191456226064293053
+    second: Shining_40
+  - first:
+      213: 1501608171931321771
+    second: Shining_41
+  - first:
+      213: 4165381388613935192
+    second: Shining_42
+  - first:
+      213: -7895611965068822240
+    second: Shining_43
+  - first:
+      213: 572573887265850407
+    second: Shining_44
+  - first:
+      213: 413704723678724161
+    second: Shining_45
+  - first:
+      213: 8856043775011550243
+    second: Shining_46
+  - first:
+      213: -2083016709364864893
+    second: Shining_47
+  - first:
+      213: -2226127091355875152
+    second: Shining_48
+  - first:
+      213: 2496900485036993396
+    second: Shining_49
+  - first:
+      213: 3185213863573806639
+    second: Shining_50
+  - first:
+      213: 3409329548492019623
+    second: Shining_51
+  - first:
+      213: -4109716418238498637
+    second: Shining_52
+  - first:
+      213: 1570545202334375475
+    second: Shining_53
+  - first:
+      213: -4440186964786168216
+    second: Shining_54
+  - first:
+      213: 8541599339850362362
+    second: Shining_55
+  - first:
+      213: -8160715206292815901
+    second: Shining_56
+  - first:
+      213: -794162701863496501
+    second: Shining_57
+  - first:
+      213: 3884622504470412657
+    second: Shining_58
+  - first:
+      213: 3252807608370969211
+    second: Shining_59
+  - first:
+      213: 402519788029500837
+    second: Shining_60
+  - first:
+      213: -2674581595392963244
+    second: Shining_61
+  - first:
+      213: -2635555345756999764
+    second: Shining_62
+  - first:
+      213: -4373374978995329149
+    second: Shining_63
+  - first:
+      213: 3470780106986328940
+    second: Shining_64
+  - first:
+      213: -5721589930476732704
+    second: Shining_65
+  - first:
+      213: 8425925842772707334
+    second: Shining_66
+  - first:
+      213: 3964419097168936484
+    second: Shining_67
+  - first:
+      213: 366530613558543684
+    second: Shining_68
+  - first:
+      213: 2769899111133379660
+    second: Shining_69
+  - first:
+      213: 7468138846805908651
+    second: Shining_70
+  - first:
+      213: 8381663861654809261
+    second: Shining_71
+  - first:
+      213: -671708839911318116
+    second: Shining_72
+  - first:
+      213: 4324148713079149984
+    second: Shining_73
+  - first:
+      213: -7609076308083873538
+    second: Shining_74
+  - first:
+      213: -771864824302330418
+    second: Shining_75
+  - first:
+      213: 2017850238942258498
+    second: Shining_76
+  - first:
+      213: -2238754022535931772
+    second: Shining_77
+  - first:
+      213: 8789824575017836152
+    second: Shining_78
+  - first:
+      213: 3217365374769500578
+    second: Shining_79
+  - first:
+      213: -4801071623979717167
+    second: Shining_80
+  - first:
+      213: 1112461813794166169
+    second: Shining_81
+  - first:
+      213: -7717109263569125875
+    second: Shining_82
+  - first:
+      213: -1669509540798504135
+    second: Shining_83
+  - first:
+      213: 8010766226763130603
+    second: Shining_84
+  - first:
+      213: 7605688001457683348
+    second: Shining_85
+  - first:
+      213: 4434199859355752077
+    second: Shining_86
+  - first:
+      213: -6273815718408611531
+    second: Shining_87
+  - first:
+      213: 8929845096179009380
+    second: Shining_88
+  - first:
+      213: 5765141515932400344
+    second: Shining_89
+  - first:
+      213: 3154630531910136043
+    second: Shining_90
+  - first:
+      213: -3488909836486685728
+    second: Shining_91
+  - first:
+      213: 1202991767162053897
+    second: Shining_92
+  - first:
+      213: 583342484554211328
+    second: Shining_93
+  - first:
+      213: -4280453941203191443
+    second: Shining_94
+  - first:
+      213: 226438589171897773
+    second: Shining_95
+  - first:
+      213: -1628025872666453540
+    second: Shining_96
+  - first:
+      213: -5909465224188713065
+    second: Shining_97
+  - first:
+      213: -6854016617086225341
+    second: Shining_98
+  - first:
+      213: -1172634093706663517
+    second: Shining_99
+  - first:
+      213: -7245348887225345986
+    second: Shining_100
+  - first:
+      213: -983905376954632328
+    second: Shining_101
+  - first:
+      213: -2740240752524615311
+    second: Shining_102
+  - first:
+      213: 5861403195686785382
+    second: Shining_103
+  - first:
+      213: 1176882177205381293
+    second: Shining_104
+  - first:
+      213: -8485130782634985113
+    second: Shining_105
+  - first:
+      213: 293451162716882242
+    second: Shining_106
+  - first:
+      213: 3432802171671992363
+    second: Shining_107
+  - first:
+      213: -6799225086951071735
+    second: Shining_108
+  - first:
+      213: 1312215918620918244
+    second: Shining_109
+  - first:
+      213: 221295779537162443
+    second: Shining_110
+  - first:
+      213: 6521016403965670389
+    second: Shining_111
+  - first:
+      213: -6816440257558307953
+    second: Shining_112
+  - first:
+      213: -7823495589548517192
+    second: Shining_113
+  - first:
+      213: -6542512855423503362
+    second: Shining_114
+  - first:
+      213: 4348605859172262052
+    second: Shining_115
+  - first:
+      213: -4238129579172623205
+    second: Shining_116
+  - first:
+      213: -833711907648608787
+    second: Shining_117
+  - first:
+      213: 7080445191610599219
+    second: Shining_118
+  - first:
+      213: -735464946613722106
+    second: Shining_119
+  - first:
+      213: 1099674287089052211
+    second: Shining_120
+  - first:
+      213: 5532343948481120921
+    second: Shining_121
+  - first:
+      213: 9011206037598030209
+    second: Shining_122
+  - first:
+      213: -4426991435706656641
+    second: Shining_123
+  - first:
+      213: -4226653945920110422
+    second: Shining_124
+  - first:
+      213: 2791896289292892113
+    second: Shining_125
+  - first:
+      213: -3098846204480011527
+    second: Shining_126
+  - first:
+      213: -1056835402050148647
+    second: Shining_127
+  - first:
+      213: -6689180161689298675
+    second: Shining_128
+  - first:
+      213: -213928898808794436
+    second: Shining_129
+  - first:
+      213: 3891517269684932703
+    second: Shining_130
+  - first:
+      213: 5912789533841502844
+    second: Shining_131
+  - first:
+      213: -9055022982730354572
+    second: Shining_132
+  - first:
+      213: 1804050621437526939
+    second: Shining_133
+  - first:
+      213: 169689390957116823
+    second: Shining_134
+  - first:
+      213: 7278075229909754290
+    second: Shining_135
+  - first:
+      213: -1433604389416842964
+    second: Shining_136
+  - first:
+      213: 274804345067634858
+    second: Shining_137
+  - first:
+      213: -7556418287498129216
+    second: Shining_138
+  - first:
+      213: -8974970178795052988
+    second: Shining_139
+  - first:
+      213: -3407762337049529920
+    second: Shining_140
+  - first:
+      213: 3058155265226067318
+    second: Shining_141
+  - first:
+      213: -2660207410854989263
+    second: Shining_142
+  - first:
+      213: -2991027564667151121
+    second: Shining_143
+  - first:
+      213: 4020405647831326666
+    second: Shining_144
+  - first:
+      213: -180357309473096322
+    second: Shining_145
+  - first:
+      213: -259376255299764329
+    second: Shining_146
+  - first:
+      213: -7362775033146039322
+    second: Shining_147
+  - first:
+      213: -6622645688099155642
+    second: Shining_148
+  - first:
+      213: -1033172665949031155
+    second: Shining_149
+  - first:
+      213: 2186851545089651469
+    second: Shining_150
+  - first:
+      213: 267702457992534573
+    second: Shining_151
+  - first:
+      213: -3987425954974807447
+    second: Shining_152
+  - first:
+      213: -6870432338443515023
+    second: Shining_153
+  - first:
+      213: 7570107541565386279
+    second: Shining_154
+  - first:
+      213: -1116227714902870309
+    second: Shining_155
+  - first:
+      213: -6103394161102214222
+    second: Shining_156
+  - first:
+      213: 889210307411894970
+    second: Shining_157
+  - first:
+      213: 844012762344914472
+    second: Shining_158
+  - first:
+      213: 8207787411455451124
+    second: Shining_159
+  - first:
+      213: 7059347112188708133
+    second: Shining_160
+  - first:
+      213: 207112766108682013
+    second: Shining_161
+  - first:
+      213: -3855353572251226270
+    second: Shining_162
+  - first:
+      213: -9190305207648960404
+    second: Shining_163
+  - first:
+      213: 7412707128319338944
+    second: Shining_164
+  - first:
+      213: -4998703913941014160
+    second: Shining_165
+  - first:
+      213: -6602505419635008435
+    second: Shining_166
+  - first:
+      213: -4371426685036872741
+    second: Shining_167
+  - first:
+      213: 4372930788419281146
+    second: Shining_168
+  - first:
+      213: 7621596962974254991
+    second: Shining_169
+  - first:
+      213: 5998753359837287525
+    second: Shining_170
+  - first:
+      213: 173394390408203164
+    second: Shining_171
+  - first:
+      213: -6966395888993603010
+    second: Shining_172
+  - first:
+      213: 676437091896066433
+    second: Shining_173
+  - first:
+      213: 944562122565954130
+    second: Shining_174
+  - first:
+      213: -5409300952049039497
+    second: Shining_175
+  - first:
+      213: -7538039574608052036
+    second: Shining_176
+  - first:
+      213: -8089009670158063312
+    second: Shining_177
+  - first:
+      213: 4705660157734506288
+    second: Shining_178
+  - first:
+      213: -8031673875872674017
+    second: Shining_179
+  - first:
+      213: 1161623733071419044
+    second: Shining_180
+  - first:
+      213: -2387434748111806723
+    second: Shining_181
+  - first:
+      213: 4377000241234325695
+    second: Shining_182
+  - first:
+      213: -3550926324728384391
+    second: Shining_183
+  - first:
+      213: 700409928350919179
+    second: Shining_184
+  - first:
+      213: 8676339582462060483
+    second: Shining_185
+  - first:
+      213: 8674532138246606716
+    second: Shining_186
+  - first:
+      213: 2994817525441875113
+    second: Shining_187
+  - first:
+      213: 3286946728954139458
+    second: Shining_188
+  - first:
+      213: -7155221253494763603
+    second: Shining_189
+  - first:
+      213: 3828249563744771790
+    second: Shining_190
+  - first:
+      213: 5909941102022265672
+    second: Shining_191
+  - first:
+      213: 3680975659909504035
+    second: Shining_192
+  - first:
+      213: -8359364810669828185
+    second: Shining_193
+  - first:
+      213: 3242253809331656641
+    second: Shining_194
+  - first:
+      213: 5967274081249996716
+    second: Shining_195
+  - first:
+      213: 4032370274660643945
+    second: Shining_196
+  - first:
+      213: 7176704182350648889
+    second: Shining_197
+  - first:
+      213: -8839953160051547702
+    second: Shining_198
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shining_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 945
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caddcf756ea6cdba0800000000000000
+      internalID: -6062853460796318292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_1
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 896
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aef10f742a6c1570800000000000000
+      internalID: 8438736506767670946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 886
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386eb4b5724cfe390800000000000000
+      internalID: -7786789557385828733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_3
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 869
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094468df9b5fd69e0800000000000000
+      internalID: -1626373711239691120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_4
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 860
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a78ce9de7c3ef40800000000000000
+      internalID: 5756664572094741008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_5
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 819
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2951601d0c9acb40800000000000000
+      internalID: 5461349078063470891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_6
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 839
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d24c53a825ccaf80800000000000000
+      internalID: -8093877651961527599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 840
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b710edb8c632260800000000000000
+      internalID: 7071615187882703686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_8
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 843
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7179fb06e392ce0800000000000000
+      internalID: -1429542821461289019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 820
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ddd2738d71c32e10800000000000000
+      internalID: 2171792190143127000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_10
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 827
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454a04dff188672f0800000000000000
+      internalID: -975442598304897964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_11
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 824
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae4c29f64cf34140800000000000000
+      internalID: 4702879817663270572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 813
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7a64ec1f2784ed0800000000000000
+      internalID: -2429565616092960846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_13
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 813
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5255c4a9a108cf30800000000000000
+      internalID: 4595925247857087070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_14
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 813
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddbe87d36799d4f90800000000000000
+      internalID: -6967744315355763747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_15
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 791
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c183122b57d29f440800000000000000
+      internalID: 4970053647302998044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_16
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 755
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cd7296be42831d0800000000000000
+      internalID: -3370903727586681771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_17
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 771
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96402421034d5c60800000000000000
+      internalID: 7808471001110431390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_18
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 740
+        width: 8
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5a4d406ecf9d6a0800000000000000
+      internalID: -6423825328613579343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_19
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 783
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdea009f4fb065af0800000000000000
+      internalID: -408125569452953889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_20
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 772
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e27b9466277949b0800000000000000
+      internalID: -5095410496612633885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_21
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 773
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce2ddc6b7a017ac0800000000000000
+      internalID: -3859291880456114490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_22
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 701
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57eaaefc14b15f4f0800000000000000
+      internalID: -795699789685936523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_23
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 717
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc12238c27e47d560800000000000000
+      internalID: 7338420372715479501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_24
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 696
+        width: 41
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6eacd4a538f9330800000000000000
+      internalID: 3719836241106757282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_25
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 729
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0680146f167220c00800000000000000
+      internalID: 865297380105324640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_26
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 737
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8974f484466f3c10800000000000000
+      internalID: 2035458001069177229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_27
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 713
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd2456a3d484b230800000000000000
+      internalID: 3653691242267815391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_28
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 696
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a5b4c80e32bce20800000000000000
+      internalID: 3371828193350343226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_29
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 715
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007c6527e468db8b0800000000000000
+      internalID: -5134800328648636672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_30
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 733
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36166dbc26301560800000000000000
+      internalID: 7282380163242137151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_31
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 723
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d21e92f1f7ab73d0800000000000000
+      internalID: -3207785651971943723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_32
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 702
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d562ff55f416f9d0800000000000000
+      internalID: -2740980279099103789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_33
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 708
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a1086375922c8b0800000000000000
+      internalID: -5133495170695685495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_34
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 736
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a716110c32a4028a0800000000000000
+      internalID: -6331979558676242054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_35
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 659
+        width: 79
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5604c2ffbc1ff70800000000000000
+      internalID: 9219374209023632863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_36
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 726
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee60d0d09ba362120800000000000000
+      internalID: 2388661218828945134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_37
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 708
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a803810fff2a3d0800000000000000
+      internalID: -3196711378816562628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_38
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 725
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af905188eb07f250800000000000000
+      internalID: 5978260123587485607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_39
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 665
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94703c5fceef5fb10800000000000000
+      internalID: 2014796702007101257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_40
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 717
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc555ce55f2dc360800000000000000
+      internalID: 7191456226064293053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_41
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 690
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba54acf2da8c6d410800000000000000
+      internalID: 1501608171931321771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_42
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 679
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8506b56cd486ec930800000000000000
+      internalID: 4165381388613935192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_43
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 607
+        width: 122
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029bfb120c62d6290800000000000000
+      internalID: -7895611965068822240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_44
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 683
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7244526bae032f700800000000000000
+      internalID: 572573887265850407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_45
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 677
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14085c81146cdb500800000000000000
+      internalID: 413704723678724161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_46
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 510
+        width: 151
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3247fdc54ecf6ea70800000000000000
+      internalID: 8856043775011550243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_47
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 640
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388aa11d653a713e0800000000000000
+      internalID: -2083016709364864893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_48
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 670
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b80cd674353b11e0800000000000000
+      internalID: -2226127091355875152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_49
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 665
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b612213c5c6a220800000000000000
+      internalID: 2496900485036993396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_50
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 629
+        width: 58
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e57f70227243c20800000000000000
+      internalID: 3185213863573806639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_51
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 659
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a71c14392f505f20800000000000000
+      internalID: 3409329548492019623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_52
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8bd4b11ba57f6c0800000000000000
+      internalID: -4109716418238498637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_53
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 649
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e95d85a82bbc510800000000000000
+      internalID: 1570545202334375475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_54
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 638
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86eb99b0b794162c0800000000000000
+      internalID: -4440186964786168216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_55
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 640
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afded71285bd98670800000000000000
+      internalID: 8541599339850362362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_56
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 624
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3efb9c7d1c05fbe80800000000000000
+      internalID: -8160715206292815901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_57
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 636
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4df85fa319af4f0800000000000000
+      internalID: -794162701863496501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_58
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 630
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d72711693f8e530800000000000000
+      internalID: 3884622504470412657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_59
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 629
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ab3a3294b442d20800000000000000
+      internalID: 3252807608370969211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_60
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 619
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad50945d99069500800000000000000
+      internalID: 402519788029500837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_61
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 620
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d0ec3a53af1ead0800000000000000
+      internalID: -2674581595392963244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_62
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 621
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cafa5467060ac6bd0800000000000000
+      internalID: -2635555345756999764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_63
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 618
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387e663b0a6ae43c0800000000000000
+      internalID: -4373374978995329149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_64
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 564
+        width: 39
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63996a4e10ba2030800000000000000
+      internalID: 3470780106986328940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_65
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 610
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee7b73c544d890b0800000000000000
+      internalID: -5721589930476732704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_66
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 503
+        width: 127
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608404a59e6eee470800000000000000
+      internalID: 8425925842772707334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_67
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 529
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e778b1a22740730800000000000000
+      internalID: 3964419097168936484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_68
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 596
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445867ca6ad261500800000000000000
+      internalID: 366530613558543684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_69
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 553
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c76c6e098a07620800000000000000
+      internalID: 2769899111133379660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_70
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 554
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac592996b824a760800000000000000
+      internalID: 7468138846805908651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_71
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 560
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daae9accfd6a15470800000000000000
+      internalID: 8381663861654809261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_72
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 581
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d98947e5c9da6f0800000000000000
+      internalID: -671708839911318116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_73
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 600
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a59b0f1856720c30800000000000000
+      internalID: 4324148713079149984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_74
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 568
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8e1d39961276690800000000000000
+      internalID: -7609076308083873538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_75
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 559
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd17d42809c945f0800000000000000
+      internalID: -771864824302330418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_76
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 528
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245271ee918d00c10800000000000000
+      internalID: 2017850238942258498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_77
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 594
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488d443f3195ee0e0800000000000000
+      internalID: -2238754022535931772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_78
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 584
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87edfe761eabbf970800000000000000
+      internalID: 8789824575017836152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_79
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 556
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a117c313c066ac20800000000000000
+      internalID: 3217365374769500578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_80
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 548
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd2b7f8bca2f5db0800000000000000
+      internalID: -4801071623979717167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_81
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 493
+        width: 9
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99553652022407f00800000000000000
+      internalID: 1112461813794166169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_82
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 520
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ef514030257e490800000000000000
+      internalID: -7717109263569125875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_83
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 523
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93364970be5b4d8e0800000000000000
+      internalID: -1669509540798504135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_84
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 524
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6a9ecb075fb2f60800000000000000
+      internalID: 8010766226763130603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_85
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 509
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bf55fc0f4dc8960800000000000000
+      internalID: 7605688001457683348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_86
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 506
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d869cf75741798d30800000000000000
+      internalID: 4434199859355752077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_87
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 487
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5391efd18ddeee8a0800000000000000
+      internalID: -6273815718408611531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_88
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 499
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46783097dce2deb70800000000000000
+      internalID: 8929845096179009380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_89
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 472
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8daf109e9a5e10050800000000000000
+      internalID: 5765141515932400344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_90
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 486
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0fa1c31cf77cb20800000000000000
+      internalID: 3154630531910136043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_91
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 489
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb48de1df6e49fc0800000000000000
+      internalID: -3488909836486685728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_92
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 489
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905e96573a2e1b010800000000000000
+      internalID: 1202991767162053897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_93
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 484
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0006f3626e2781800800000000000000
+      internalID: 583342484554211328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_94
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 483
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69b92db1d5c894c0800000000000000
+      internalID: -4280453941203191443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_95
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 377
+        width: 57
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5180772b8742300800000000000000
+      internalID: 226438589171897773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_96
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 449
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9129e28171869e0800000000000000
+      internalID: -1628025872666453540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_97
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 464
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79725b330bc5dfda0800000000000000
+      internalID: -5909465224188713065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_98
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 462
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34473fd6334a1e0a0800000000000000
+      internalID: -6854016617086225341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_99
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 472
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a92a113187f9bfe0800000000000000
+      internalID: -1172634093706663517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_100
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 459
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3859271399537b90800000000000000
+      internalID: -7245348887225345986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_101
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 455
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877b50ac5477852f0800000000000000
+      internalID: -983905376954632328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_102
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 421
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171a8b2dd85b8f9d0800000000000000
+      internalID: -2740240752524615311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_103
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 470
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6611044c623e75150800000000000000
+      internalID: 5861403195686785382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_104
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 467
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8a0d2da10255010800000000000000
+      internalID: 1176882177205381293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_105
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 388
+        width: 95
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7693f446282ce3a80800000000000000
+      internalID: -8485130782634985113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_106
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 436
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2454aa8174c821400800000000000000
+      internalID: 293451162716882242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_107
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 412
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28d2ba2363c3af20800000000000000
+      internalID: 3432802171671992363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_108
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 436
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9006b58aecc44a1a0800000000000000
+      internalID: -6799225086951071735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_109
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 413
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e14302fc6de53210800000000000000
+      internalID: 1312215918620918244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_110
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 434
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc01b99c653321300800000000000000
+      internalID: 221295779537162443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_111
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 446
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f37edc9edd4f7a50800000000000000
+      internalID: 6521016403965670389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_112
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 440
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b909763b32761a0800000000000000
+      internalID: -6816440257558307953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_113
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 428
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b81023463c5d6390800000000000000
+      internalID: -7823495589548517192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_114
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 447
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef33e02c8335435a0800000000000000
+      internalID: -6542512855423503362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_115
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 450
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a025203df9595c30800000000000000
+      internalID: 4348605859172262052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_116
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 383
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c07513a932f25c0800000000000000
+      internalID: -4238129579172623205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_117
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 419
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5679bef6f0e64f0800000000000000
+      internalID: -833711907648608787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_118
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 389
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3378291536bc24260800000000000000
+      internalID: 7080445191610599219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_119
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 425
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6046658178a1bc5f0800000000000000
+      internalID: -735464946613722106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_120
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 346
+        width: 49
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ae29210f3d24f00800000000000000
+      internalID: 1099674287089052211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_121
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 411
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99acf707285d6cc40800000000000000
+      internalID: 5532343948481120921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_122
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 379
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189c2e4d52c3e0d70800000000000000
+      internalID: 9011206037598030209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_123
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 409
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7812039eba2092c0800000000000000
+      internalID: -4426991435706656641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_124
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 390
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0cde441a8e755c0800000000000000
+      internalID: -4226653945920110422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_125
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 363
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7b80d02eeceb620800000000000000
+      internalID: 2791896289292892113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_126
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 357
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f2c660abcfaef4d0800000000000000
+      internalID: -3098846204480011527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_127
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 351
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d66eba1dcd5551f0800000000000000
+      internalID: -1056835402050148647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_128
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 342
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d095bef65124b23a0800000000000000
+      internalID: -6689180161689298675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_129
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 343
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2bf4bccc8f70df0800000000000000
+      internalID: -213928898808794436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_130
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 317
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f505ed0b652710630800000000000000
+      internalID: 3891517269684932703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_131
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 325
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c723544f0c27e0250800000000000000
+      internalID: 5912789533841502844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_132
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 315
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470fb51a298165280800000000000000
+      internalID: -9055022982730354572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_133
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 318
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b934b9f5b76490910800000000000000
+      internalID: 1804050621437526939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_134
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 321
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79db62e1a9bda5200800000000000000
+      internalID: 169689390957116823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_135
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 301
+        width: 39
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b127575cdae00560800000000000000
+      internalID: 7278075229909754290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_136
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 309
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c294e544760da1ce0800000000000000
+      internalID: -1433604389416842964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_137
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 303
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa08d7a881d40d300800000000000000
+      internalID: 274804345067634858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_138
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 276
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c098676a95322790800000000000000
+      internalID: -7556418287498129216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_139
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 298
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440623f7c20827380800000000000000
+      internalID: -8974970178795052988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_140
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 288
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c13535a53235b0d0800000000000000
+      internalID: -3407762337049529920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_141
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 296
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d4acbc200c07a20800000000000000
+      internalID: 3058155265226067318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_142
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 278
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1327027447b051bd0800000000000000
+      internalID: -2660207410854989263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_143
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 291
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fecdc9ee64cbd76d0800000000000000
+      internalID: -2991027564667151121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_144
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 260
+        width: 85
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acfd5fbb2a95bc730800000000000000
+      internalID: 4020405647831326666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_145
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 290
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7df53c8bfd3f7df0800000000000000
+      internalID: -180357309473096322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_146
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 280
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fbfa78ba2866cf0800000000000000
+      internalID: -259376255299764329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_147
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e32734fd1b22d990800000000000000
+      internalID: -7362775033146039322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_148
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 279
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641d39fb5d2a714a0800000000000000
+      internalID: -6622645688099155642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_149
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 272
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05f67e2fee69a1f0800000000000000
+      internalID: -1033172665949031155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_150
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 249
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d033591d4e1495e10800000000000000
+      internalID: 2186851545089651469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_151
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 185
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ad42a97f117b300800000000000000
+      internalID: 267702457992534573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_152
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 212
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96acd816831d9a8c0800000000000000
+      internalID: -3987425954974807447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_153
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 230
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bc7b5703257a0a0800000000000000
+      internalID: -6870432338443515023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_154
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 174
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ea28e63bc6e0960800000000000000
+      internalID: 7570107541565386279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_155
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 225
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6b4ccaecc5280f0800000000000000
+      internalID: -1116227714902870309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_156
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 214
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb2f4ff8536c4ba0800000000000000
+      internalID: -6103394161102214222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_157
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 210
+        width: 35
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2e6e7301c175c00800000000000000
+      internalID: 889210307411894970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_158
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 225
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ef675b22986bb00800000000000000
+      internalID: 844012762344914472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_159
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 214
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff99bbf92be7e170800000000000000
+      internalID: 8207787411455451124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_160
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 210
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5250038ebc6d7f160800000000000000
+      internalID: 7059347112188708133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_161
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 220
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d174b54a6ffcfd200800000000000000
+      internalID: 207112766108682013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_162
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 209
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fae624a580f7ac0800000000000000
+      internalID: -3855353572251226270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_163
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 211
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6049a02b1a757080800000000000000
+      internalID: -9190305207648960404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_164
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 217
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9ea77ebd93fd660800000000000000
+      internalID: 7412707128319338944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_165
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 211
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079e038464901aab0800000000000000
+      internalID: -4998703913941014160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_166
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 248
+        width: 60
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c501b6d403f54a0800000000000000
+      internalID: -6602505419635008435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_167
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 198
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbb6bc37929553c0800000000000000
+      internalID: -4371426685036872741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_168
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 131
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0a91f1265cfac30800000000000000
+      internalID: 4372930788419281146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_169
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 190
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87c64f8e0a55c960800000000000000
+      internalID: 7621596962974254991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_170
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 170
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5645844e56adf3350800000000000000
+      internalID: 5998753359837287525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_171
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 169
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b83568745086200800000000000000
+      internalID: 173394390408203164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_172
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 161
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e327bc739d3625f90800000000000000
+      internalID: -6966395888993603010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_173
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 150
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1810d5f73ff236900800000000000000
+      internalID: 676437091896066433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_174
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 108
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a25d7fe32cb1d00800000000000000
+      internalID: 944562122565954130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_175
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 124
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7774fed917d4ee4b0800000000000000
+      internalID: -5409300952049039497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_176
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 159
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb086a4f1f0836790800000000000000
+      internalID: -7538039574608052036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_177
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 132
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0396789ff801ebf80800000000000000
+      internalID: -8089009670158063312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_178
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 178
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f49775bfcdd4140800000000000000
+      internalID: 4705660157734506288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_179
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 147
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f03dcd923c98090800000000000000
+      internalID: -8031673875872674017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_180
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 147
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6926471aaee1010800000000000000
+      internalID: 1161623733071419044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_181
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 141
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe1f5aeeb02eded0800000000000000
+      internalID: -2387434748111806723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_182
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 142
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb03290778a3ebc30800000000000000
+      internalID: 4377000241234325695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_183
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 95
+        width: 61
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9743bfe325398bec0800000000000000
+      internalID: -3550926324728384391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_184
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 115
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a63807e1b58b900800000000000000
+      internalID: 700409928350919179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_185
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 111
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7ef4b81ec886870800000000000000
+      internalID: 8676339582462060483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_186
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 106
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f06e42501226870800000000000000
+      internalID: 8674532138246606716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_187
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 97
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9acc3131caabf8920800000000000000
+      internalID: 2994817525441875113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_188
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 48
+        width: 24
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24391fe82a49d9d20800000000000000
+      internalID: 3286946728954139458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_189
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 91
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf8e101e2c83bc90800000000000000
+      internalID: -7155221253494763603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_190
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 98
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece1d8ef1bca02530800000000000000
+      internalID: 3828249563744771790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_191
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 89
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b848dbe14540250800000000000000
+      internalID: 5909941102022265672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_192
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 81
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cd3cb2cd3751330800000000000000
+      internalID: 3680975659909504035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_193
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 62
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7df189ef19dfb80800000000000000
+      internalID: -8359364810669828185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_194
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 72
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7ded059accefc20800000000000000
+      internalID: 3242253809331656641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_195
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 50
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf2d42392400d250800000000000000
+      internalID: 5967274081249996716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_196
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 56
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964fdff766bd5f730800000000000000
+      internalID: 4032370274660643945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_197
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 41
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93612171e66c89360800000000000000
+      internalID: 7176704182350648889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shining_198
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac12900ef6d225580800000000000000
+      internalID: -8839953160051547702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shining_0: -6062853460796318292
+      Shining_1: 8438736506767670946
+      Shining_10: -975442598304897964
+      Shining_100: -7245348887225345986
+      Shining_101: -983905376954632328
+      Shining_102: -2740240752524615311
+      Shining_103: 5861403195686785382
+      Shining_104: 1176882177205381293
+      Shining_105: -8485130782634985113
+      Shining_106: 293451162716882242
+      Shining_107: 3432802171671992363
+      Shining_108: -6799225086951071735
+      Shining_109: 1312215918620918244
+      Shining_11: 4702879817663270572
+      Shining_110: 221295779537162443
+      Shining_111: 6521016403965670389
+      Shining_112: -6816440257558307953
+      Shining_113: -7823495589548517192
+      Shining_114: -6542512855423503362
+      Shining_115: 4348605859172262052
+      Shining_116: -4238129579172623205
+      Shining_117: -833711907648608787
+      Shining_118: 7080445191610599219
+      Shining_119: -735464946613722106
+      Shining_12: -2429565616092960846
+      Shining_120: 1099674287089052211
+      Shining_121: 5532343948481120921
+      Shining_122: 9011206037598030209
+      Shining_123: -4426991435706656641
+      Shining_124: -4226653945920110422
+      Shining_125: 2791896289292892113
+      Shining_126: -3098846204480011527
+      Shining_127: -1056835402050148647
+      Shining_128: -6689180161689298675
+      Shining_129: -213928898808794436
+      Shining_13: 4595925247857087070
+      Shining_130: 3891517269684932703
+      Shining_131: 5912789533841502844
+      Shining_132: -9055022982730354572
+      Shining_133: 1804050621437526939
+      Shining_134: 169689390957116823
+      Shining_135: 7278075229909754290
+      Shining_136: -1433604389416842964
+      Shining_137: 274804345067634858
+      Shining_138: -7556418287498129216
+      Shining_139: -8974970178795052988
+      Shining_14: -6967744315355763747
+      Shining_140: -3407762337049529920
+      Shining_141: 3058155265226067318
+      Shining_142: -2660207410854989263
+      Shining_143: -2991027564667151121
+      Shining_144: 4020405647831326666
+      Shining_145: -180357309473096322
+      Shining_146: -259376255299764329
+      Shining_147: -7362775033146039322
+      Shining_148: -6622645688099155642
+      Shining_149: -1033172665949031155
+      Shining_15: 4970053647302998044
+      Shining_150: 2186851545089651469
+      Shining_151: 267702457992534573
+      Shining_152: -3987425954974807447
+      Shining_153: -6870432338443515023
+      Shining_154: 7570107541565386279
+      Shining_155: -1116227714902870309
+      Shining_156: -6103394161102214222
+      Shining_157: 889210307411894970
+      Shining_158: 844012762344914472
+      Shining_159: 8207787411455451124
+      Shining_16: -3370903727586681771
+      Shining_160: 7059347112188708133
+      Shining_161: 207112766108682013
+      Shining_162: -3855353572251226270
+      Shining_163: -9190305207648960404
+      Shining_164: 7412707128319338944
+      Shining_165: -4998703913941014160
+      Shining_166: -6602505419635008435
+      Shining_167: -4371426685036872741
+      Shining_168: 4372930788419281146
+      Shining_169: 7621596962974254991
+      Shining_17: 7808471001110431390
+      Shining_170: 5998753359837287525
+      Shining_171: 173394390408203164
+      Shining_172: -6966395888993603010
+      Shining_173: 676437091896066433
+      Shining_174: 944562122565954130
+      Shining_175: -5409300952049039497
+      Shining_176: -7538039574608052036
+      Shining_177: -8089009670158063312
+      Shining_178: 4705660157734506288
+      Shining_179: -8031673875872674017
+      Shining_18: -6423825328613579343
+      Shining_180: 1161623733071419044
+      Shining_181: -2387434748111806723
+      Shining_182: 4377000241234325695
+      Shining_183: -3550926324728384391
+      Shining_184: 700409928350919179
+      Shining_185: 8676339582462060483
+      Shining_186: 8674532138246606716
+      Shining_187: 2994817525441875113
+      Shining_188: 3286946728954139458
+      Shining_189: -7155221253494763603
+      Shining_19: -408125569452953889
+      Shining_190: 3828249563744771790
+      Shining_191: 5909941102022265672
+      Shining_192: 3680975659909504035
+      Shining_193: -8359364810669828185
+      Shining_194: 3242253809331656641
+      Shining_195: 5967274081249996716
+      Shining_196: 4032370274660643945
+      Shining_197: 7176704182350648889
+      Shining_198: -8839953160051547702
+      Shining_2: -7786789557385828733
+      Shining_20: -5095410496612633885
+      Shining_21: -3859291880456114490
+      Shining_22: -795699789685936523
+      Shining_23: 7338420372715479501
+      Shining_24: 3719836241106757282
+      Shining_25: 865297380105324640
+      Shining_26: 2035458001069177229
+      Shining_27: 3653691242267815391
+      Shining_28: 3371828193350343226
+      Shining_29: -5134800328648636672
+      Shining_3: -1626373711239691120
+      Shining_30: 7282380163242137151
+      Shining_31: -3207785651971943723
+      Shining_32: -2740980279099103789
+      Shining_33: -5133495170695685495
+      Shining_34: -6331979558676242054
+      Shining_35: 9219374209023632863
+      Shining_36: 2388661218828945134
+      Shining_37: -3196711378816562628
+      Shining_38: 5978260123587485607
+      Shining_39: 2014796702007101257
+      Shining_4: 5756664572094741008
+      Shining_40: 7191456226064293053
+      Shining_41: 1501608171931321771
+      Shining_42: 4165381388613935192
+      Shining_43: -7895611965068822240
+      Shining_44: 572573887265850407
+      Shining_45: 413704723678724161
+      Shining_46: 8856043775011550243
+      Shining_47: -2083016709364864893
+      Shining_48: -2226127091355875152
+      Shining_49: 2496900485036993396
+      Shining_5: 5461349078063470891
+      Shining_50: 3185213863573806639
+      Shining_51: 3409329548492019623
+      Shining_52: -4109716418238498637
+      Shining_53: 1570545202334375475
+      Shining_54: -4440186964786168216
+      Shining_55: 8541599339850362362
+      Shining_56: -8160715206292815901
+      Shining_57: -794162701863496501
+      Shining_58: 3884622504470412657
+      Shining_59: 3252807608370969211
+      Shining_6: -8093877651961527599
+      Shining_60: 402519788029500837
+      Shining_61: -2674581595392963244
+      Shining_62: -2635555345756999764
+      Shining_63: -4373374978995329149
+      Shining_64: 3470780106986328940
+      Shining_65: -5721589930476732704
+      Shining_66: 8425925842772707334
+      Shining_67: 3964419097168936484
+      Shining_68: 366530613558543684
+      Shining_69: 2769899111133379660
+      Shining_7: 7071615187882703686
+      Shining_70: 7468138846805908651
+      Shining_71: 8381663861654809261
+      Shining_72: -671708839911318116
+      Shining_73: 4324148713079149984
+      Shining_74: -7609076308083873538
+      Shining_75: -771864824302330418
+      Shining_76: 2017850238942258498
+      Shining_77: -2238754022535931772
+      Shining_78: 8789824575017836152
+      Shining_79: 3217365374769500578
+      Shining_8: -1429542821461289019
+      Shining_80: -4801071623979717167
+      Shining_81: 1112461813794166169
+      Shining_82: -7717109263569125875
+      Shining_83: -1669509540798504135
+      Shining_84: 8010766226763130603
+      Shining_85: 7605688001457683348
+      Shining_86: 4434199859355752077
+      Shining_87: -6273815718408611531
+      Shining_88: 8929845096179009380
+      Shining_89: 5765141515932400344
+      Shining_9: 2171792190143127000
+      Shining_90: 3154630531910136043
+      Shining_91: -3488909836486685728
+      Shining_92: 1202991767162053897
+      Shining_93: 583342484554211328
+      Shining_94: -4280453941203191443
+      Shining_95: 226438589171897773
+      Shining_96: -1628025872666453540
+      Shining_97: -5909465224188713065
+      Shining_98: -6854016617086225341
+      Shining_99: -1172634093706663517
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
