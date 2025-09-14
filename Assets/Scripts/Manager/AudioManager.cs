@@ -5,8 +5,8 @@ using System;
 
 public class AudioManager:Singleton<AudioManager>
 {
-    public Sound[] BGMSounds, sfxSounds,sfxLoop,enemyLoop;
-    public AudioSource BGMSource, sfxSource, sfxSource2,enemySfxLoop;
+    public Sound[] BGMSounds, sfxSounds1,sfxSounds2;
+    public AudioSource BGMSource, sfxSource1, sfxSource2;
 
     private void Start()
     {
@@ -26,22 +26,10 @@ public class AudioManager:Singleton<AudioManager>
             BGMSource.Play();
         }
     }
-    //public void PlayUI(string name)
-    //{
-    //    Sound s = Array.Find(UISounds, x => x.name == name);
 
-    //    if (s == null)
-    //    {
-    //        Debug.Log("sound not found");
-    //    }
-    //    else
-    //    {
-    //        UISourse.PlayOneShot(s.clip);
-    //    }
-    //}
     public void PlaySFX(string name)
     {
-        Sound s = Array.Find(sfxSounds, x => x.name == name);
+        Sound s = Array.Find(sfxSounds1, x => x.name == name);
         if (s == null)
         {
             Debug.Log("sound not found");
@@ -53,7 +41,7 @@ public class AudioManager:Singleton<AudioManager>
     }
     public void PlaySFX2(string name)
     {
-        Sound s = Array.Find(sfxLoop, x => x.name == name);
+        Sound s = Array.Find(sfxSounds2, x => x.name == name);
         if (s == null)
         {
             Debug.Log("sound not found");
@@ -64,27 +52,27 @@ public class AudioManager:Singleton<AudioManager>
             sfxSource2.Play();
         }
     }
-    public void StopPlaySFX2()
-    {
-            sfxSource2.Stop();
-    }
-    public void PlayEnemyLoop(string name)
-    {
-        Sound s = Array.Find(enemyLoop, x => x.name == name);
-        if (s == null)
-        {
-            Debug.Log("sound not found");
-        }
-        else
-        {
-            enemySfxLoop.clip = s.clip;
-            enemySfxLoop.Play();
-        }
-    }
-    public void StopEnemyLoop()
-    {
-        enemySfxLoop.Stop();
-    }
+    // public void StopPlaySFX2()
+    // {
+    //         sfxSource2.Stop();
+    // }
+    // public void PlayEnemyLoop(string name)
+    // {
+    //     Sound s = Array.Find(enemyLoop, x => x.name == name);
+    //     if (s == null)
+    //     {
+    //         Debug.Log("sound not found");
+    //     }
+    //     else
+    //     {
+    //         enemySfxLoop.clip = s.clip;
+    //         enemySfxLoop.Play();
+    //     }
+    // }
+    // public void StopEnemyLoop()
+    // {
+    //     enemySfxLoop.Stop();
+    // }
 
     //public void Button_In()
     //{
