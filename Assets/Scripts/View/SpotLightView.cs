@@ -109,8 +109,8 @@ public class SpotLightView : IView
 
     public override void ResetView()
     {
-        isPlaying = false;
         StopAllCoroutines();
+        isPlaying = false;
     }
 }
 

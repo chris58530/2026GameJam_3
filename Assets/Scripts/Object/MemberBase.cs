@@ -13,8 +13,16 @@ public class MemberBase : MonoBehaviour
     public bool canMove = true;
     public bool canDash = true;
     public bool isInSpotLight;
-    public Action<GameColor, bool, MemberBase> checkPointAction;
     public GameColor gameColor;
+    protected Rigidbody2D rb;
+    protected SpriteRenderer spriteRenderer;
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+    }
+
+
     public virtual void Move(Vector3 direction)
     {
     }
@@ -22,7 +30,16 @@ public class MemberBase : MonoBehaviour
     public virtual void Die()
     {
     }
-
+    public virtual void ResetView()
+    {
+        isKnocked = false;
+        isDashing = false;
+        canMove = false;
+        canDash = false;
+        rb.linearVelocity = Vector2.zero;
+        StopAllCoroutines();
+        DOTween.Kill(GetHashCode());
+    }
     public virtual void OnCheckPoint(GameColor color)
     {
     }
@@ -45,7 +62,7 @@ public class MemberBase : MonoBehaviour
         Vector3 knockTarget = transform.position + knockDirection * knockDistance;
 
         // 使用DOTween移動到目標位置
-        transform.DOMove(knockTarget, knockDuration).SetEase(Ease.OutQuad);
+        transform.DOMove(knockTarget, knockDuration).SetEase(Ease.OutQuad).SetId(GetHashCode());
 
         // 0.5秒後恢復正常狀態
         DOVirtual.DelayedCall(0.5f, () =>

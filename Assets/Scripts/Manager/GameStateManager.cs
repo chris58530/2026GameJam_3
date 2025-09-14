@@ -7,14 +7,14 @@ public class GameStateManager : Singleton<GameStateManager>
     public GameColor CurrentColor { get; private set; } = GameColor.Red;
 
     [Header("StartCanvas")]
-    [SerializeField] private GameObject startCanvas;
+    [SerializeField] private GameUICanvasView startCanvas;
 
     [Header("View")]
     [SerializeField] private SpotLightView spotLightView;
     [SerializeField] private MemberView memberView;
     [SerializeField] private BartendView bartendView;
 
-    public ColorSetting[] colorSetting;
+    [HideInInspector] public ColorSetting[] colorSetting;
     public bool isCheckPoint = false;
 
     private void OnEnable()
@@ -29,19 +29,19 @@ public class GameStateManager : Singleton<GameStateManager>
         switch (newState)
         {
             case GameState.MainMenu:
-                Debug.Log("Enter MainMenu State");
-                startCanvas.SetActive(true);
+                Debug.Log("========== MainMenu ");
+                startCanvas.ShowMenu();
                 break;
             case GameState.PreStart:
-                Debug.Log("Enter PreStart State");
+                Debug.Log("========== PreStart ");
                 ChangeState(GameState.Playing);//todo 之後加入遊戲開始前的表演
                 break;
             case GameState.Playing:
-                Debug.Log("Enter Playing State");
+                Debug.Log("========== Playing ");
                 OnPlayingState();
                 break;
             case GameState.GameOver:
-                Debug.Log("Enter GameOver State");
+                Debug.Log("========== GameOver ");
                 OnGameOver();
                 break;
         }
@@ -50,21 +50,24 @@ public class GameStateManager : Singleton<GameStateManager>
     public void ChangeColor(GameColor newColor)
     {
         CurrentColor = newColor;
+        OnCheckPoint();
         Debug.Log("ChangeColor to " + newColor);
     }
 
     public void OnPlayingState()
     {
+
+        //memberView
+        memberView.StartNPCSpawn(onMemberDie: OnNPCDie);
+        memberView.Init(() => ChangeState(GameState.GameOver));
+        GameProxy.currentMember = memberView.GetMemberCount();
+
         //spotLightView
         spotLightView.isPlaying = true;
         spotLightView.StartColorProgress((GameColor color) =>
         {
             ChangeColor(color);
         }, ShowRoundGlass);
-
-        //memberView
-        memberView.StartNPCSpawn(onMemberDie: OnNPCDie);
-        memberView.Init(() => ChangeState(GameState.GameOver));
     }
 
     public void OnGameOver()
@@ -72,6 +75,7 @@ public class GameStateManager : Singleton<GameStateManager>
         spotLightView.ResetView();
         memberView.ResetView();
         bartendView.ResetView();
+        ChangeState(GameState.MainMenu);
     }
 
     //每回合開始分發酒杯數量 數量為目前member數量 - 1
@@ -85,23 +89,17 @@ public class GameStateManager : Singleton<GameStateManager>
     {
         GameProxy.currentMember--;
 
-        if (GameProxy.GetCurrentMember() <= 0)
+        //只剩下玩家
+        if (GameProxy.GetCurrentMember() <= 1)
         {
+            Debug.Log("只剩下玩家 win");
             ChangeState(GameState.GameOver);
         }
     }
 
-    public void OnCheckPoint(GameColor color, bool isInSpotLight, MemberBase member)
+    public void OnCheckPoint()
     {
-        if (color == CurrentColor && isInSpotLight)
-        {
-            Debug.Log("CheckPoint Success");
-        }
-        else
-        {
-            Debug.Log("CheckPoint Failed" + member.name);
-            member.Die();
-        }
+        memberView.CheckAllMembersPoint(CurrentColor);
     }
 }
 public enum GameState

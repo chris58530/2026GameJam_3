@@ -7,16 +7,8 @@ public class Player : MemberBase
     [SerializeField] private float dashDistance = 3f;
     [SerializeField] private float dashDuration = 0.2f;
 
-    private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
     private Vector2 lastMoveDirection = Vector2.right;
     public Action onGameOver;
-
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
     public void Update()
     {
@@ -30,10 +22,13 @@ public class Player : MemberBase
     public void Init(Action onGameOver)
     {
         this.onGameOver += onGameOver;
+        canMove = true;
+        canDash = true;
     }
 
     public override void Die()
     {
+        ResetView();
         onGameOver?.Invoke();
     }
 
@@ -48,6 +43,7 @@ public class Player : MemberBase
     {
         if (color != gameColor)
         {
+            Debug.Log("Player Color Mismatch! Game Over!");
             Die();
         }
     }

@@ -8,4 +8,9 @@ public class GameUICanvasView : MonoBehaviour
         GameStateManager.Instance.ChangeState(GameState.PreStart);
         root.SetActive(false);
     }
+
+    public void ShowMenu()
+    {
+        root.SetActive(true);
+    }
 }

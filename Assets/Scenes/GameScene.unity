@@ -968,7 +968,16 @@ MonoBehaviour:
   gameColor: 2
   glassAmount: 10
   getGlassTime: 1
-  glassObjects: []
+  glassObjects:
+  - {fileID: 1902445850}
+  - {fileID: 1937869374}
+  - {fileID: 213692482}
+  - {fileID: 1284002596}
+  - {fileID: 315603734}
+  - {fileID: 135195026}
+  - {fileID: 2127025769}
+  - {fileID: 2005218200}
+  - {fileID: 1172037645}
 --- !u!1 &391180023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,10 +1384,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26696a59b08c24afda9a56dff159ed03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 0}
+  startCanvas: {fileID: 1682393423}
   spotLightView: {fileID: 1020470793}
   memberView: {fileID: 435715036}
-  bartendView: {fileID: 0}
+  bartendView: {fileID: 558847508}
   colorSetting: []
   isCheckPoint: 0
 --- !u!4 &426388820
@@ -1530,7 +1539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   root: {fileID: 0}
-  npcCount: 10
+  npcCount: 3
   player: {fileID: 400901210}
   npcPrefab: {fileID: 7884560477681054790, guid: 78b51a4ab337841819cefdbfdab0d9ae, type: 3}
   spawnRangeX: {x: 3, y: -3}
@@ -3540,7 +3549,8 @@ Transform:
   m_LocalPosition: {x: 9.3, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1640165293}
   m_Father: {fileID: 1980302733}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1628922742
@@ -3659,7 +3669,16 @@ MonoBehaviour:
   gameColor: 1
   glassAmount: 10
   getGlassTime: 1
-  glassObjects: []
+  glassObjects:
+  - {fileID: 2081335457}
+  - {fileID: 294940425}
+  - {fileID: 1082951207}
+  - {fileID: 1415131413}
+  - {fileID: 2120381096}
+  - {fileID: 432603143}
+  - {fileID: 719832277}
+  - {fileID: 1333575084}
+  - {fileID: 1759638971}
 --- !u!1 &1640165292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3685,8 +3704,8 @@ Transform:
   m_GameObject: {fileID: 1640165292}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.81892, y: 1.80405, z: 0}
-  m_LocalScale: {x: 2.4054, y: 2.4054, z: 2.4054}
+  m_LocalPosition: {x: -1.2027001, y: 4.510125, z: 0}
+  m_LocalScale: {x: 6.0135, y: 6.0135, z: 6.0135}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2081335458}
@@ -3698,7 +3717,7 @@ Transform:
   - {fileID: 719832278}
   - {fileID: 1333575085}
   - {fileID: 1759638972}
-  m_Father: {fileID: 1980302733}
+  m_Father: {fileID: 1628922741}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1682393421
 GameObject:
@@ -4478,7 +4497,16 @@ MonoBehaviour:
   gameColor: 3
   glassAmount: 10
   getGlassTime: 1
-  glassObjects: []
+  glassObjects:
+  - {fileID: 395202072}
+  - {fileID: 759254884}
+  - {fileID: 662979453}
+  - {fileID: 1802645428}
+  - {fileID: 2084096437}
+  - {fileID: 1005987646}
+  - {fileID: 1105308524}
+  - {fileID: 1392026802}
+  - {fileID: 164222981}
 --- !u!1 &1980302732
 GameObject:
   m_ObjectHideFlags: 0
@@ -4508,7 +4536,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1640165293}
   - {fileID: 1628922741}
   m_Father: {fileID: 558847507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -23,7 +23,6 @@ public class MemberView : MonoBehaviour
     {
         player.Init(onGameOver);
         memberBases.Add(player);
-
     }
 
     public void StartNPCSpawn(Action onMemberDie)
@@ -39,18 +38,32 @@ public class MemberView : MonoBehaviour
         }
     }
 
+    public int GetMemberCount()
+    {
+        return memberBases.Count;
+    }
+
     public void CheckAllMembersPoint(GameColor color)
     {
-        foreach (var member in memberBases)
-        {
-            member.OnCheckPoint(color);
-        }
+        // 創建一個副本來避免集合修改異常
+        var membersToCheck = new List<MemberBase>(memberBases);
 
+        foreach (var member in membersToCheck)
+        {
+            if (member != null)
+            {
+                member.OnCheckPoint(color);
+            }
+        }
     }
 
     public void ResetView()
     {
-
+        foreach (var member in memberBases)
+        {
+            member.ResetView();
+        }
+        memberBases.Clear();
     }
 
 }

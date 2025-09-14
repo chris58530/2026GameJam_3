@@ -12,6 +12,7 @@ public class Table : MonoBehaviour
     public void SetTableGlassAmount(int amount)
     {
         glassAmount = amount;
+        Debug.Log($"SetTableGlassAmount: {glassAmount} for {gameColor}");
         for (int i = 0; i < glassObjects.Length; i++)
         {
             glassObjects[i].SetActive(i < glassAmount);
