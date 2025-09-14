@@ -526,6 +526,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2068971478276831748}
   - component: {fileID: 2068971478276831751}
+  - component: {fileID: 91476305363874076}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -567,10 +568,41 @@ MonoBehaviour:
   BGMSounds:
   - name: BGM
     clip: {fileID: 8300000, guid: 98aea7f10eb58aa479a683f79c528e81, type: 3}
-  sfxSounds: []
-  sfxLoop: []
-  enemyLoop: []
+  sfxSounds1: []
+  sfxSounds2: []
   BGMSource: {fileID: 2068971476367787868}
-  sfxSource: {fileID: 2068971477077191179}
+  sfxSource1: {fileID: 0}
   sfxSource2: {fileID: 2068971477722855564}
-  enemySfxLoop: {fileID: 0}
+--- !u!114 &91476305363874076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068971478276831995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb21f18d7e1d82c44a3a48e64593b721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fftSize: 1024
+  window: 5
+  thresholdMul: 1.6
+  history: 43
+  lowBin: 0
+  highBin: 128
+  OnBeat:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

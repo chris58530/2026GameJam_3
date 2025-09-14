@@ -36,7 +36,7 @@ public class AudioManager:Singleton<AudioManager>
         }
         else
         {
-            sfxSource.PlayOneShot(s.clip);
+            sfxSource1.PlayOneShot(s.clip);
         }
     }
     public void PlaySFX2(string name)
@@ -88,6 +88,6 @@ public class AudioManager:Singleton<AudioManager>
     }
     public void SFXVolume(float volume)
     {
-        sfxSource.volume = volume;
+        sfxSource1.volume = volume;
     }
 }
