@@ -34,6 +34,7 @@ public class GameStateManager : Singleton<GameStateManager>
             case GameState.MainMenu:
                 Debug.Log("========== MainMenu ");
                 startCanvas.ShowMenu();
+                RestSetAllMemberColor();
                 break;
             case GameState.PreStart:
                 Debug.Log("========== PreStart ");
@@ -88,7 +89,7 @@ public class GameStateManager : Singleton<GameStateManager>
     public void ShowRoundGlass()
     {
         int currentMember = GameProxy.GetCurrentMember();
-        bartendView.SetTableGlassAmount(currentMember - 1);
+        bartendView.SetTableGlassAmount(currentMember);
     }
 
     public void OnNPCDie()

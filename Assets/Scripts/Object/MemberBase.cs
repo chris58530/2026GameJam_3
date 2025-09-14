@@ -59,6 +59,7 @@ public class MemberBase : MonoBehaviour
     public virtual void ChangeColor()
     {
         spriteRenderer.color = Color.white;
+        gameColor = GameColor.white;
     }
 
     public virtual void Knock(Transform target)

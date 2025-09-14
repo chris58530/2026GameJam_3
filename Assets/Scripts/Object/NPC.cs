@@ -222,6 +222,13 @@ public class NPC : MemberBase
 
     private void UpdateMovingToSpotLight()
     {
+        if (gameColor == GameColor.white)
+        {
+            Debug.Log($"[NPC] {name}: 顏色為白色，無法進入聚光燈，回到搜尋狀態");
+            ChangeState(NPCState.SearchingTable);
+            return;
+        }
+
         if (targetSpotLight != null && canMove && !isDashing && !isKnocked)
         {
             Vector2 direction = (targetSpotLight.transform.position - transform.position).normalized;

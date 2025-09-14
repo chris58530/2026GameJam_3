@@ -166,11 +166,13 @@ MonoBehaviour:
   canDash: 1
   isInSpotLight: 0
   gameColor: 0
+  rb: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   NPCState: 0
   targetTable: {fileID: 0}
   huntingTarget: {fileID: 0}
   targetSpotLight: {fileID: 0}
-  moveSpeed: 2
+  moveSpeed: 4
 --- !u!70 &7930155743941439591
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
