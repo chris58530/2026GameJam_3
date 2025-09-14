@@ -120,7 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7945606872584802756}
   - component: {fileID: 7884560477681054790}
-  - component: {fileID: -3440126545793246}
+  - component: {fileID: 7930155743941439591}
   - component: {fileID: 6412588972663697058}
   m_Layer: 0
   m_Name: C_01
@@ -166,8 +166,8 @@ MonoBehaviour:
   canDash: 1
   isInSpotLight: 0
   gameColor: 0
---- !u!61 &-3440126545793246
-BoxCollider2D:
+--- !u!70 &7930155743941439591
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -200,18 +200,9 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.062787056, y: 0.31393337}
+  m_Size: {x: 1.6301599, y: 3.0231266}
+  m_Direction: 0
 --- !u!50 &6412588972663697058
 Rigidbody2D:
   serializedVersion: 5
