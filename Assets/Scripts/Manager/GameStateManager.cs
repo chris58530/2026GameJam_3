@@ -4,7 +4,8 @@ using UnityEngine;
 public class GameStateManager : Singleton<GameStateManager>
 {
     public GameState CurrentState { get; private set; } = GameState.MainMenu;
-    public GameColor CurrentColor { get; private set; } = GameColor.Red;
+    public GameColor CurrentColor = GameColor.Red;
+    public GameColor NextColor = GameColor.Red;
 
     [Header("StartCanvas")]
     [SerializeField] private GameUICanvasView startCanvas;
@@ -15,6 +16,8 @@ public class GameStateManager : Singleton<GameStateManager>
     [SerializeField] private BartendView bartendView;
 
     [HideInInspector] public ColorSetting[] colorSetting;
+
+    public Action<NPCState> onNPCStateChange;
     public bool isCheckPoint = false;
 
     private void OnEnable()
@@ -46,11 +49,14 @@ public class GameStateManager : Singleton<GameStateManager>
                 break;
         }
     }
-
+    private void RestSetAllMemberColor()
+    {
+        memberView.AllMembersWhite();
+    }
     public void ChangeColor(GameColor newColor)
     {
         CurrentColor = newColor;
-        OnCheckPoint();
+        OnCheckPoint(newColor);
         Debug.Log("ChangeColor to " + newColor);
     }
 
@@ -67,7 +73,7 @@ public class GameStateManager : Singleton<GameStateManager>
         spotLightView.StartColorProgress((GameColor color) =>
         {
             ChangeColor(color);
-        }, ShowRoundGlass);
+        }, ShowRoundGlass, RestSetAllMemberColor);
     }
 
     public void OnGameOver()
@@ -97,9 +103,14 @@ public class GameStateManager : Singleton<GameStateManager>
         }
     }
 
-    public void OnCheckPoint()
+    public void OnCheckPoint(GameColor newColor)
     {
-        memberView.CheckAllMembersPoint(CurrentColor);
+        memberView.CheckAllMembersPoint(newColor);
+    }
+
+    public void ChangeNPCState(NPCState newState)
+    {
+        onNPCStateChange?.Invoke(newState);
     }
 }
 public enum GameState
@@ -111,7 +122,7 @@ public enum GameState
 }
 public enum GameColor
 {
-    none,
+    white,
     Red,
     Blue,
     Green,

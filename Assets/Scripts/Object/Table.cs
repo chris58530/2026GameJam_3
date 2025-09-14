@@ -3,8 +3,8 @@ using DG.Tweening;
 
 public class Table : MonoBehaviour
 {
-    [SerializeField] private GameColor gameColor;
-    [SerializeField] private int glassAmount = 10;
+    public GameColor gameColor;
+    public int glassAmount = 10;
     [SerializeField] private float getGlassTime = 1f;
     [SerializeField] private GameObject[] glassObjects;
     public bool HasGlass => glassAmount > 0;
@@ -19,11 +19,20 @@ public class Table : MonoBehaviour
         }
     }
 
+    public void UpdateGlassAmount()
+    {
+        if (glassAmount >= 0 && glassAmount < glassObjects.Length)
+        {
+            glassObjects[glassAmount].SetActive(false);
+        }
+    }
+
     public GameColor GetGlass()
     {
         if (glassAmount > 0)
         {
             glassAmount--;
+            UpdateGlassAmount();
             return gameColor;
         }
         else return GameColor.Red;

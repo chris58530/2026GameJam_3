@@ -224,11 +224,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   skillCooldown: 0
-  speed: 0
+  speed: 10
   isDashing: 0
   isKnocked: 0
   canMove: 1
   canDash: 1
+  isInSpotLight: 0
+  gameColor: 0
+  baseSpeed: 10
+  speedVariation: 10
+  baseDashCooldown: 3
+  cooldownVariation: 1
+  dashDistance: 3
+  dashDuration: 0.2
+  detectionRange: 5
+  currentState: 0
 --- !u!61 &-3440126545793246
 BoxCollider2D:
   m_ObjectHideFlags: 0

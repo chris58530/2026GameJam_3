@@ -23,6 +23,7 @@ public class MemberView : MonoBehaviour
     {
         player.Init(onGameOver);
         memberBases.Add(player);
+        player.removeMemberCallback = RemoveMember;
     }
 
     public void StartNPCSpawn(Action onMemberDie)
@@ -35,6 +36,7 @@ public class MemberView : MonoBehaviour
             npc.transform.SetParent(transform);
             npc.Init(onMemberDie);
             memberBases.Add(npc);
+            npc.removeMemberCallback = RemoveMember;
         }
     }
 
@@ -57,11 +59,39 @@ public class MemberView : MonoBehaviour
         }
     }
 
+    public void AllMembersWhite()
+    {
+        // 創建一個副本來避免集合修改異常
+        var membersToUpdate = new List<MemberBase>(memberBases);
+
+        foreach (var member in membersToUpdate)
+        {
+            if (member != null)
+            {
+                member.ChangeColor();
+            }
+        }
+    }
+
+    public void RemoveMember(MemberBase member)
+    {
+        if (memberBases.Contains(member))
+        {
+            memberBases.Remove(member);
+        }
+    }
+
     public void ResetView()
     {
-        foreach (var member in memberBases)
+        // 創建一個副本來避免集合修改異常
+        var membersToReset = new List<MemberBase>(memberBases);
+
+        foreach (var member in membersToReset)
         {
-            member.ResetView();
+            if (member != null)
+            {
+                member.ResetView();
+            }
         }
         memberBases.Clear();
     }

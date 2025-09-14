@@ -43,7 +43,7 @@ public class Player : MemberBase
     {
         if (color != gameColor)
         {
-            Debug.Log("Player Color Mismatch! Game Over!");
+            Debug.Log($"[Player] {color}: 顏色不匹配 {gameColor}，死亡");
             Die();
         }
     }
@@ -90,8 +90,9 @@ public class Player : MemberBase
         rb.linearVelocity = movement * speed;
     }
 
-    private void UpdateColor(GameColor gameColor)
+    public override void UpdateColor(GameColor gameColor)
     {
+        this.gameColor = gameColor;
         ColorSetting[] color = GameStateManager.Instance.colorSetting;
         foreach (var c in color)
         {
