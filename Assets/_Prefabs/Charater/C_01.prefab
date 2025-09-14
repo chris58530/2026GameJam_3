@@ -173,9 +173,11 @@ MonoBehaviour:
   targetTable: {fileID: 0}
   huntingTarget: {fileID: 0}
   targetSpotLight: {fileID: 0}
+  targetGlass: {fileID: 0}
   moveSpeed: 4
   dashDistance: 3
   dashDuration: 0.2
+  canSearchGlass: 0
 --- !u!70 &7930155743941439591
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

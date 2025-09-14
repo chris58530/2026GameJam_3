@@ -31,7 +31,8 @@ public class NPC : MemberBase
     private void Update()
     {
         // 根據當前狀態執行對應的更新邏輯
-        UpdateCurrentState();
+        if (GameStateManager.Instance.canMove)
+            UpdateCurrentState();
     }
 
     private void UpdateCurrentState()

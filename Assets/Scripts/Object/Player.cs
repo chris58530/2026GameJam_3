@@ -12,6 +12,8 @@ public class Player : MemberBase
 
     public void Update()
     {
+        if (!GameStateManager.Instance.canMove)
+            return;
         if (canMove && !isDashing)
             UseArrowMove();
 

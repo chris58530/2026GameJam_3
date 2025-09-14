@@ -8,8 +8,12 @@ public class GameStateManager : Singleton<GameStateManager>
     public GameColor CurrentColor = GameColor.Red;
     public GameColor NextColor = GameColor.Red;
 
+    [SerializeField] private float introTime = 5;
+
+
     [Header("StartCanvas")]
     [SerializeField] private GameUICanvasView startCanvas;
+    [SerializeField] private GameObject introObject;
 
     [Header("View")]
     [SerializeField] private SpotLightView spotLightView;
@@ -19,11 +23,15 @@ public class GameStateManager : Singleton<GameStateManager>
     [HideInInspector] public ColorSetting[] colorSetting;
 
     public Action<NPCState> onNPCStateChange;
+
+    public bool canMove;
     public bool isCheckPoint = false;
 
     private void OnEnable()
     {
         colorSetting = spotLightView.GetColorSettings();
+        AudioManager.Instance.PlayBGM("MenuBGM");
+
     }
 
 
@@ -39,20 +47,29 @@ public class GameStateManager : Singleton<GameStateManager>
                 AudioManager.Instance.PlayBGM("MenuBGM");
                 break;
             case GameState.PreStart:
+                introObject.SetActive(true);
                 Debug.Log("========== PreStart ");
-                ChangeState(GameState.Playing);//todo 之後加入遊戲開始前的表演
+                AudioManager.Instance.PlayBGM("GameBGM");
+                memberView.StartNPCSpawn(onMemberDie: OnNPCDie);
+                memberView.Init(() => ChangeState(GameState.GameOver));
+                GameProxy.currentMember = memberView.GetMemberCount();
+                DOVirtual.DelayedCall(introTime, () =>
+                {
+                    ChangeState(GameState.Playing);
+                }).SetId(GetHashCode());
                 break;
             case GameState.Playing:
+                introObject.SetActive(false);
+
                 Debug.Log("========== Playing ");
                 OnPlayingState();
-                AudioManager.Instance.PlayBGM("GameBGM");
-                AudioManager.Instance.PlaySFX("char");
+                AudioManager.Instance.PlaySFX2("char");
 
                 break;
             case GameState.GameOver:
                 Debug.Log("========== GameOver ");
                 OnGameOver();
-                AudioManager.Instance.PlaySFX("GameOver");
+                AudioManager.Instance.PlaySFX2("GameOver");
                 break;
         }
     }
@@ -71,9 +88,7 @@ public class GameStateManager : Singleton<GameStateManager>
     {
 
         //memberView
-        memberView.StartNPCSpawn(onMemberDie: OnNPCDie);
-        memberView.Init(() => ChangeState(GameState.GameOver));
-        GameProxy.currentMember = memberView.GetMemberCount();
+
 
         //spotLightView
         spotLightView.isPlaying = true;
@@ -81,10 +96,17 @@ public class GameStateManager : Singleton<GameStateManager>
         {
             ChangeColor(color);
         }, ShowRoundGlass, RestSetAllMemberColor);
+
+        DOVirtual.DelayedCall(1f, () =>
+        {
+            canMove = true;
+        }).SetId(GetHashCode());
     }
 
     public void OnGameOver()
     {
+        canMove = false;
+
         spotLightView.ResetView();
         memberView.ResetView();
         bartendView.ResetView();
