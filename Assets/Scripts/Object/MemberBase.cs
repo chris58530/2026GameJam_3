@@ -100,6 +100,8 @@ public class MemberBase : MonoBehaviour
             canMove = true;
         }).SetId(GetHashCode());
 
+        AudioManager.Instance.PlaySFX("impact");
+
     }
 
     private void OnCollisionEnter2D(Collision2D other)
