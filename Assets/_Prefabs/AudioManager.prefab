@@ -566,12 +566,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BGMSounds:
-  - name: BGM
-    clip: {fileID: 8300000, guid: 98aea7f10eb58aa479a683f79c528e81, type: 3}
-  sfxSounds1: []
-  sfxSounds2: []
+  - name: MenuBGM
+    clip: {fileID: 8300000, guid: c699cba270134b74ca759cbf89f7e005, type: 3}
+  - name: GameBGM
+    clip: {fileID: 8300000, guid: 22e7bb9a641c31b49b17f3f7b866718a, type: 3}
+  sfxSounds1:
+  - name: drink
+    clip: {fileID: 8300000, guid: 2f99876f22d1c3d438c5b27c82f12d17, type: 3}
+  - name: Impact
+    clip: {fileID: 8300000, guid: b81027236cd7c02428d8db13e7d46c76, type: 3}
+  - name: laser
+    clip: {fileID: 8300000, guid: e403a3c252a06a84392f21a2cb8061a1, type: 3}
+  sfxSounds2:
+  - name: buttonClick
+    clip: {fileID: 8300000, guid: e4657567f0c84a6499b52c424c851925, type: 3}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: ac2c6f04b79aacb4da52093d51677a30, type: 3}
+  - name: char
+    clip: {fileID: 8300000, guid: 1a20a734050586b448d2c12a5ac1b649, type: 3}
   BGMSource: {fileID: 2068971476367787868}
-  sfxSource1: {fileID: 0}
+  sfxSource1: {fileID: 2068971477077191179}
   sfxSource2: {fileID: 2068971477722855564}
 --- !u!114 &91476305363874076
 MonoBehaviour:
