@@ -500,6 +500,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2068971478276831751, guid: 715aa1b7b38842349a8739c78f789ea4, type: 3}
+      propertyPath: sfxSounds2.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068971478276831751, guid: 715aa1b7b38842349a8739c78f789ea4, type: 3}
+      propertyPath: sfxSounds2.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b81027236cd7c02428d8db13e7d46c76, type: 3}
+    - target: {fileID: 2068971478276831751, guid: 715aa1b7b38842349a8739c78f789ea4, type: 3}
+      propertyPath: sfxSounds2.Array.data[3].name
+      value: Impact
+      objectReference: {fileID: 0}
     - target: {fileID: 2068971478276831995, guid: 715aa1b7b38842349a8739c78f789ea4, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -794,6 +806,10 @@ PrefabInstance:
       propertyPath: roundSpeedCurve.m_Curve.Array.data[1].outSlope
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 449672667248246924, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8290940194079866489, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
       propertyPath: m_Name
       value: SpotLightView
@@ -851,6 +867,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2564718238773775315, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4042407428511570906, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1060,10 +1080,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 2083082925}
   - {fileID: 426388820}
+  - {fileID: 1099465849778044482}
   - {fileID: 3914383141259867329}
   - {fileID: 247794022033271575}
   - {fileID: 5172941010624656059}
-  - {fileID: 1099465849778044482}
   - {fileID: 7441826028991835818}
   - {fileID: 598081119}
   - {fileID: 1008914059}
