@@ -112,10 +112,12 @@ MonoBehaviour:
   root: {fileID: 0}
   npcCount: 3
   player: {fileID: 3412450900629993862}
-  npcPrefab: {fileID: 7884560477681054790, guid: 78b51a4ab337841819cefdbfdab0d9ae, type: 3}
+  npcPrefab:
+  - {fileID: 7884560477681054790, guid: 6ee905a6604d96341a56404b5d06afcb, type: 3}
+  - {fileID: 7884560477681054790, guid: 185bff51536a17549b2cd7d9f26d4d15, type: 3}
+  - {fileID: 7884560477681054790, guid: 3636f8538e9ca1b44bc0133b5fe8b6ca, type: 3}
   spawnRangeX: {x: 3, y: -3}
   spawnRangeY: {x: 3, y: -3}
-  memberBase: {fileID: 0}
 --- !u!1 &5560989708289674354
 GameObject:
   m_ObjectHideFlags: 0
