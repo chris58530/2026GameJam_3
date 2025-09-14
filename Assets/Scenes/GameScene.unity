@@ -176,6 +176,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754167d1c6d592c4cac8cfd72f4089d3, type: 3}
+--- !u!1 &184196199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4910057458496445905, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+  m_PrefabInstance: {fileID: 3914383141259867329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &248721535
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,10 +851,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4042407428511570906, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1682393423}
+    - target: {fileID: 4042407428511570906, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042407428511570906, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUICanvasView, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042407428511570906, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910057458496445905, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6932184431734624622, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1682393423}
+    - target: {fileID: 6932184431734624622, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6932184431734624622, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUICanvasView, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6932184431734624622, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7464625334904937083, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
       propertyPath: m_Name
       value: GameUICanvasView
       objectReference: {fileID: 0}
+    - target: {fileID: 9163981674652872027, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
+      propertyPath: infoObject
+      value: 
+      objectReference: {fileID: 184196199}
     - target: {fileID: 9216484915683123058, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.3

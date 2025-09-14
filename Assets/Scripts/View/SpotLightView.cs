@@ -35,9 +35,12 @@ public class SpotLightView : IView
             originalScale = spotLightImage.transform.localScale;
         spotLightImage.gameObject.SetActive(false);
         spotLights.gameObject.SetActive(false);
+        discoBallImage.color = Color.white;
     }
     public void StartColorProgress(Action<GameColor> onColorChange, Action showGlass, Action resetAllMemberColor)
     {
+        discoBallImage.color = Color.white;
+
         round = 0;
         this.onColorChange = onColorChange;
         this.showGlass = showGlass;
@@ -127,6 +130,8 @@ public class SpotLightView : IView
         spotLightImage.transform.localScale = originalScale;
         spotLights.SetColor(Color.white);
         spotLightImage.gameObject.SetActive(false);
+        spotLights.gameObject.SetActive(false);
+
         discoBallImage.color = Color.white;
         spotLightImage.color = Color.white;
         StopAllCoroutines();

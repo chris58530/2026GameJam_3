@@ -168,7 +168,7 @@ MonoBehaviour:
   gameColor: 0
   rb: {fileID: 0}
   spriteRenderer: {fileID: 0}
-  glassPrefab: {fileID: 0}
+  glassPrefab: {fileID: 8139720464896773880, guid: 7c2aef43ef03a4a03bd569123404c838, type: 3}
   NPCState: 0
   targetTable: {fileID: 0}
   huntingTarget: {fileID: 0}

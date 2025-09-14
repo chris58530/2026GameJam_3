@@ -31,6 +31,7 @@ public class GameStateManager : Singleton<GameStateManager>
     {
         colorSetting = spotLightView.GetColorSettings();
         AudioManager.Instance.PlayBGM("MenuBGM");
+        introObject.SetActive(false);
 
     }
 
