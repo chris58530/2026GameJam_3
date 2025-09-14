@@ -6,7 +6,7 @@ public class Player : MemberBase
 
     [SerializeField] private float dashDistance = 3f;
     [SerializeField] private float dashDuration = 0.2f;
-
+    public Animator animator;
     private Vector2 lastMoveDirection = Vector2.right;
     public Action onGameOver;
 
@@ -38,6 +38,7 @@ public class Player : MemberBase
     public override void UseSkill()
     {
         if (!canDash || isDashing) return;
+        animator.Play("Rush");
 
         StartCoroutine(DashCoroutine());
     }
@@ -89,7 +90,7 @@ public class Player : MemberBase
         {
             lastMoveDirection = movement;
         }
-
+        animator.Play("Walk");
         rb.linearVelocity = movement * speed;
     }
 

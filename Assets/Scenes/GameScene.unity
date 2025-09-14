@@ -133,15 +133,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7863949338027374945, guid: 754167d1c6d592c4cac8cfd72f4089d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 853.7122
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7863949338027374945, guid: 754167d1c6d592c4cac8cfd72f4089d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 555.3033
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7863949338027374945, guid: 754167d1c6d592c4cac8cfd72f4089d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.519201
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7863949338027374945, guid: 754167d1c6d592c4cac8cfd72f4089d3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -344,11 +344,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentColor: 1
   NextColor: 1
+  introTime: 5
   startCanvas: {fileID: 1682393423}
+  introObject: {fileID: 1364613132}
   spotLightView: {fileID: 1020470793}
   memberView: {fileID: 435715036}
   bartendView: {fileID: 558847508}
   colorSetting: []
+  canMove: 0
   isCheckPoint: 0
 --- !u!4 &426388820
 Transform:
@@ -555,7 +558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2847434500110414569, guid: 040e40e26ca1e5b408c4e95939a16ebe, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2847434500110414569, guid: 040e40e26ca1e5b408c4e95939a16ebe, type: 3}
       propertyPath: m_FalloffIntensity
@@ -577,6 +580,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb3868ef71464472b08c00f84028a74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1364613132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1562628246782645276, guid: 754167d1c6d592c4cac8cfd72f4089d3, type: 3}
+  m_PrefabInstance: {fileID: 121919070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1682393423 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9163981674652872027, guid: 4fa530e7505624505b9d90fa818f8ea6, type: 3}
