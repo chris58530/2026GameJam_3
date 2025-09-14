@@ -119,7 +119,8 @@ public class Player : MemberBase
         {
             if (member != this)
             {
-                Knock(this.transform);
+                Debug.Log($"[Player] {name}: 碰撞到 {member.name}，並擊退對方");
+                member.Knock(this.transform);
             }
         }
         if (collision.TryGetComponent<SpotLight>(out SpotLight spotLight))
@@ -135,5 +136,7 @@ public class Player : MemberBase
             isInSpotLight = false;
         }
     }
+
+
 
 }

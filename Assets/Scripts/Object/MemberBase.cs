@@ -16,6 +16,7 @@ public class MemberBase : MonoBehaviour
     public GameColor gameColor;
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
+    public Glass glassPrefab;
 
     public Action<MemberBase> removeMemberCallback;
     private void Start()
@@ -56,16 +57,29 @@ public class MemberBase : MonoBehaviour
 
     }
 
-    public virtual void ChangeColor()
+    public virtual void ResetColor()
     {
         spriteRenderer.color = Color.white;
         gameColor = GameColor.white;
     }
 
+    public void ThrowOutGlass()
+    {
+        if (gameColor == GameColor.white) return;
+        if (glassPrefab != null)
+        {
+            Glass thrownGlass = Instantiate(glassPrefab, transform.position, Quaternion.identity);
+            thrownGlass.SetColor(gameColor);
+            ResetColor();
+        }
+    }
+
     public virtual void Knock(Transform target)
     {
+        Debug.Log($"[MemberBase] {name}: 被擊退");
         isKnocked = true;
         canMove = false;
+
         // 計算被擊退的方向（從目標指向自己）
         Vector3 knockDirection = (transform.position - target.position).normalized;
 
@@ -85,5 +99,18 @@ public class MemberBase : MonoBehaviour
             isKnocked = false;
             canMove = true;
         }).SetId(GetHashCode());
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.TryGetComponent<MemberBase>(out MemberBase member))
+        {
+            if (!isDashing) return;
+            Debug.Log($"[MemberBase] {name}: 碰撞到 {member.name}，並擊退對方");
+            member.Knock(this.transform);
+            member.ThrowOutGlass();
+            member.ResetColor();
+        }
     }
 }

@@ -168,11 +168,14 @@ MonoBehaviour:
   gameColor: 0
   rb: {fileID: 0}
   spriteRenderer: {fileID: 0}
+  glassPrefab: {fileID: 8139720464896773880, guid: 7c2aef43ef03a4a03bd569123404c838, type: 3}
   NPCState: 0
   targetTable: {fileID: 0}
   huntingTarget: {fileID: 0}
   targetSpotLight: {fileID: 0}
   moveSpeed: 4
+  dashDistance: 3
+  dashDuration: 0.2
 --- !u!70 &7930155743941439591
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -173,6 +173,9 @@ MonoBehaviour:
   canDash: 1
   isInSpotLight: 0
   gameColor: 0
+  rb: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  glassPrefab: {fileID: 8139720464896773880, guid: 7c2aef43ef03a4a03bd569123404c838, type: 3}
   dashDistance: 3
   dashDuration: 0.2
 --- !u!212 &1766996752721728295

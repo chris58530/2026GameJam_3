@@ -68,7 +68,7 @@ public class MemberView : MonoBehaviour
         {
             if (member != null)
             {
-                member.ChangeColor();
+                member.ResetColor();
             }
         }
     }
