@@ -28,11 +28,13 @@ public class SpotLightView : IView
     public bool isPlaying = false;
     public Action<GameColor> onColorChange;
     public Action showGlass;
-    public void StartColorProgress(Action<GameColor> onColorChange, Action showGlass)
+    public Action resetAllMemberColor;
+    public void StartColorProgress(Action<GameColor> onColorChange, Action showGlass, Action resetAllMemberColor)
     {
         round = 0;
         this.onColorChange = onColorChange;
         this.showGlass = showGlass;
+        this.resetAllMemberColor = resetAllMemberColor;
         isPlaying = true;
 
         if (spotLightImage != null)
@@ -49,6 +51,7 @@ public class SpotLightView : IView
             float waitSec = roundSpeedCurve.Evaluate(round);
 
             ColorSetting currentColor = colorSettings[UnityEngine.Random.Range(0, colorSettings.Length)];
+            GameStateManager.Instance.NextColor = currentColor.gameColor;
             spotLights.SetColor(Color.white);
             spotLightImage.color = currentColor.color;
             discoBallImage.color = Color.white;
@@ -61,8 +64,11 @@ public class SpotLightView : IView
             float targetX = originalScale.x * 0.05f;
             spotLightImage.transform.DOScaleX(targetX, waitSec);
 
+
             // 開始持續移動SpotLight
             StartCoroutine(ContinuousMoveSpotLight(waitSec));
+
+            GameStateManager.Instance.ChangeNPCState(NPCState.SearchingTable);
 
             yield return new WaitForSeconds(waitSec);
             onColorChange?.Invoke(currentColor.gameColor);
@@ -71,6 +77,7 @@ public class SpotLightView : IView
 
             round++;
             yield return new WaitForSeconds(roundIdleTime);
+            resetAllMemberColor?.Invoke();
         }
     }
 
@@ -109,6 +116,10 @@ public class SpotLightView : IView
 
     public override void ResetView()
     {
+        spotLightImage.transform.localScale = originalScale;
+        spotLights.SetColor(Color.white);
+        discoBallImage.color = Color.white;
+        spotLightImage.color = Color.white;
         StopAllCoroutines();
         isPlaying = false;
     }

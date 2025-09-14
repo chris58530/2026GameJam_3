@@ -14,8 +14,10 @@ public class MemberBase : MonoBehaviour
     public bool canDash = true;
     public bool isInSpotLight;
     public GameColor gameColor;
-    protected Rigidbody2D rb;
-    protected SpriteRenderer spriteRenderer;
+    public Rigidbody2D rb;
+    public SpriteRenderer spriteRenderer;
+
+    public Action<MemberBase> removeMemberCallback;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,6 +34,7 @@ public class MemberBase : MonoBehaviour
     }
     public virtual void ResetView()
     {
+        removeMemberCallback?.Invoke(this);
         isKnocked = false;
         isDashing = false;
         canMove = false;
@@ -47,6 +50,17 @@ public class MemberBase : MonoBehaviour
     public virtual void UseSkill()
     {
     }
+
+    public virtual void UpdateColor(GameColor gameColor)
+    {
+
+    }
+
+    public virtual void ChangeColor()
+    {
+        spriteRenderer.color = Color.white;
+    }
+
     public virtual void Knock(Transform target)
     {
         isKnocked = true;

@@ -166,6 +166,11 @@ MonoBehaviour:
   canDash: 1
   isInSpotLight: 0
   gameColor: 0
+  NPCState: 0
+  targetTable: {fileID: 0}
+  huntingTarget: {fileID: 0}
+  targetSpotLight: {fileID: 0}
+  moveSpeed: 2
 --- !u!70 &7930155743941439591
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -200,8 +205,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.062787056, y: 0.31393337}
-  m_Size: {x: 1.6301599, y: 3.0231266}
+  m_Offset: {x: 0.062787056, y: -0.6657412}
+  m_Size: {x: 0.74, y: 1.0637774}
   m_Direction: 0
 --- !u!50 &6412588972663697058
 Rigidbody2D:
@@ -229,4 +234,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
