@@ -45,7 +45,7 @@ public class Player : MemberBase
 
     public override void OnCheckPoint(GameColor color)
     {
-        if (color != gameColor)
+        if (color != gameColor || !isInSpotLight)
         {
             Debug.Log($"[Player] {color}: 顏色不匹配 {gameColor}，死亡");
             Die();
