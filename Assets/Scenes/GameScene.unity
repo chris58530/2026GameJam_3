@@ -285,6 +285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26696a59b08c24afda9a56dff159ed03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentColor: 1
+  NextColor: 1
   startCanvas: {fileID: 1682393423}
   spotLightView: {fileID: 1020470793}
   memberView: {fileID: 435715036}
@@ -552,6 +554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MemberView
       objectReference: {fileID: 0}
+    - target: {fileID: 6776891513065496364, guid: 618f2b1aa9ccd492ab1c8fda03d4bdad, type: 3}
+      propertyPath: npcPrefab
+      value: 
+      objectReference: {fileID: 7884560477681054790, guid: 6ee905a6604d96341a56404b5d06afcb, type: 3}
     - target: {fileID: 8394853635169687027, guid: 618f2b1aa9ccd492ab1c8fda03d4bdad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -605,6 +611,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: colorSettings.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: colorSettings.Array.data[3].color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: colorSettings.Array.data[3].color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: colorSettings.Array.data[3].color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: colorSettings.Array.data[3].color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: colorSettings.Array.data[3].gameColor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: roundSpeedCurve.m_Curve.Array.data[0].value
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: roundSpeedCurve.m_Curve.Array.data[1].value
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: roundSpeedCurve.m_Curve.Array.data[0].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: roundSpeedCurve.m_Curve.Array.data[1].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: roundSpeedCurve.m_Curve.Array.data[0].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 381081485209283057, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
+      propertyPath: roundSpeedCurve.m_Curve.Array.data[1].outSlope
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8290940194079866489, guid: 9cf4ca55cf71f4b53bc1585e504d22ad, type: 3}
       propertyPath: m_Name
       value: SpotLightView

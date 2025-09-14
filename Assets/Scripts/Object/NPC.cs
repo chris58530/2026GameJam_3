@@ -13,6 +13,11 @@ public class NPC : MemberBase
 
     [Header("NPC Settings")]
     public float moveSpeed = 2f;     // 移動速度
+    [SerializeField] private float dashDistance = 3f;    // 衝刺距離
+    [SerializeField] private float dashDuration = 0.2f;  // 衝刺時間
+
+    private Vector2 lastMoveDirection = Vector2.right;    // 記錄最後移動方向
+
     public void Init(Action action)
     {
         onDie = action;
@@ -125,7 +130,14 @@ public class NPC : MemberBase
                 UnityEngine.Random.Range(-1f, 1f)
             ).normalized;
 
+            lastMoveDirection = randomDirection; // 更新移動方向
             rb.linearVelocity = randomDirection * (moveSpeed * 0.5f); // 較慢的速度
+        }
+
+        // 隨機使用衝刺（低機率）
+        if (canDash && UnityEngine.Random.Range(0f, 1f) < 0.01f) // 1% 機率每幀
+        {
+            UseSkill();
         }
     }
 
@@ -134,10 +146,18 @@ public class NPC : MemberBase
         if (targetTable != null && canMove && !isDashing && !isKnocked)
         {
             Vector2 direction = (targetTable.transform.position - transform.position).normalized;
+            lastMoveDirection = direction; // 更新移動方向
             rb.linearVelocity = direction * moveSpeed;
 
             // 檢查是否接近目標
             float distance = Vector2.Distance(transform.position, targetTable.transform.position);
+
+            // 如果距離適中且可以衝刺，隨機使用衝刺加速移動
+            if (distance > 2f && distance < 5f && canDash && UnityEngine.Random.Range(0f, 1f) < 0.02f) // 2% 機率每幀
+            {
+                UseSkill();
+            }
+
             if (distance < 0.5f)
             {
                 rb.linearVelocity = Vector2.zero;
@@ -232,6 +252,7 @@ public class NPC : MemberBase
         if (targetSpotLight != null && canMove && !isDashing && !isKnocked)
         {
             Vector2 direction = (targetSpotLight.transform.position - transform.position).normalized;
+            lastMoveDirection = direction; // 更新移動方向
             rb.linearVelocity = direction * moveSpeed;
 
             // 檢查是否到達聚光燈
@@ -244,6 +265,7 @@ public class NPC : MemberBase
                 if (distanceToCenter > 0.5f)
                 {
                     Vector2 followDirection = (targetSpotLight.transform.position - transform.position).normalized;
+                    lastMoveDirection = followDirection; // 更新移動方向
                     rb.linearVelocity = followDirection * (moveSpeed * 0.8f); // 稍微慢一點跟隨
                     Debug.Log($"[NPC] {name}: 在聚光燈內跟隨移動，距離中心: {distanceToCenter:F2}");
                 }
@@ -251,6 +273,7 @@ public class NPC : MemberBase
                 {
                     // 很接近中心，保持輕微跟隨
                     Vector2 followDirection = (targetSpotLight.transform.position - transform.position).normalized;
+                    lastMoveDirection = followDirection; // 更新移動方向
                     rb.linearVelocity = followDirection * (moveSpeed * 0.3f); // 更慢的跟隨速度
                     Debug.Log($"[NPC] {name}: 在聚光燈中心附近，輕微跟隨");
                 }
@@ -258,6 +281,14 @@ public class NPC : MemberBase
             else
             {
                 // 還沒到達聚光燈，全速移動
+                float distance = Vector2.Distance(transform.position, targetSpotLight.transform.position);
+
+                // 如果距離較遠且可以衝刺，使用衝刺加速
+                if (distance > 3f && canDash && UnityEngine.Random.Range(0f, 1f) < 0.03f) // 3% 機率每幀
+                {
+                    UseSkill();
+                }
+
                 Debug.Log($"[NPC] {name}: 移動到聚光燈中");
             }
         }
@@ -293,6 +324,7 @@ public class NPC : MemberBase
         if (huntingTarget != null && canMove && !isDashing && !isKnocked)
         {
             Vector2 direction = (huntingTarget.transform.position - transform.position).normalized;
+            lastMoveDirection = direction; // 更新移動方向
             rb.linearVelocity = direction * moveSpeed;
 
             // 檢查是否接近目標，可以使用技能
@@ -476,6 +508,42 @@ public class NPC : MemberBase
         {
             isInSpotLight = false;
         }
+    }
+
+    // 覆寫 UseSkill 方法來實現 NPC 的衝刺技能
+    public override void UseSkill()
+    {
+        if (!canDash || isDashing) return;
+
+        Debug.Log($"[NPC] {name}: 使用衝刺技能，方向: {lastMoveDirection}");
+        StartCoroutine(DashCoroutine());
+    }
+
+    // NPC 的衝刺協程
+    private System.Collections.IEnumerator DashCoroutine()
+    {
+        isDashing = true;
+        canMove = false;
+
+        Vector2 dashTarget = (Vector2)transform.position + lastMoveDirection.normalized * dashDistance;
+        Vector2 startPos = transform.position;
+
+        float elapsedTime = 0f;
+        while (elapsedTime < dashDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float progress = elapsedTime / dashDuration;
+
+            Vector2 currentPos = Vector2.Lerp(startPos, dashTarget, progress);
+            rb.MovePosition(currentPos);
+
+            yield return null;
+        }
+
+        isDashing = false;
+        canMove = true;
+
+        Debug.Log($"[NPC] {name}: 衝刺完成");
     }
 }
 public enum NPCState
