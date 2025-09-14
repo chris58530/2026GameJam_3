@@ -44,6 +44,14 @@ public class Player : MemberBase
         StartCoroutine(DashCoroutine());
     }
 
+    public override void OnCheckPoint(GameColor color)
+    {
+        if (color != gameColor)
+        {
+            Die();
+        }
+    }
+
     private System.Collections.IEnumerator DashCoroutine()
     {
         isDashing = true;

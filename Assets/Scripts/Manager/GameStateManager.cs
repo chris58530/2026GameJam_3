@@ -6,9 +6,13 @@ public class GameStateManager : Singleton<GameStateManager>
     public GameState CurrentState { get; private set; } = GameState.MainMenu;
     public GameColor CurrentColor { get; private set; } = GameColor.Red;
 
+    [Header("StartCanvas")]
+    [SerializeField] private GameObject startCanvas;
+
     [Header("View")]
     [SerializeField] private SpotLightView spotLightView;
     [SerializeField] private MemberView memberView;
+    [SerializeField] private BartendView bartendView;
 
     public ColorSetting[] colorSetting;
     public bool isCheckPoint = false;
@@ -26,10 +30,11 @@ public class GameStateManager : Singleton<GameStateManager>
         {
             case GameState.MainMenu:
                 Debug.Log("Enter MainMenu State");
+                startCanvas.SetActive(true);
                 break;
             case GameState.PreStart:
                 Debug.Log("Enter PreStart State");
-                ChangeState(GameState.Playing);//todo 之後加入倒數三二一
+                ChangeState(GameState.Playing);//todo 之後加入遊戲開始前的表演
                 break;
             case GameState.Playing:
                 Debug.Log("Enter Playing State");
@@ -55,7 +60,7 @@ public class GameStateManager : Singleton<GameStateManager>
         spotLightView.StartColorProgress((GameColor color) =>
         {
             ChangeColor(color);
-        });
+        }, ShowRoundGlass);
 
         //memberView
         memberView.StartNPCSpawn(onMemberDie: OnNPCDie);
@@ -64,7 +69,16 @@ public class GameStateManager : Singleton<GameStateManager>
 
     public void OnGameOver()
     {
-        spotLightView.EndColorProgress();
+        spotLightView.ResetView();
+        memberView.ResetView();
+        bartendView.ResetView();
+    }
+
+    //每回合開始分發酒杯數量 數量為目前member數量 - 1
+    public void ShowRoundGlass()
+    {
+        int currentMember = GameProxy.GetCurrentMember();
+        bartendView.SetTableGlassAmount(currentMember - 1);
     }
 
     public void OnNPCDie()

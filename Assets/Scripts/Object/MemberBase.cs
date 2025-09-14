@@ -23,9 +23,8 @@ public class MemberBase : MonoBehaviour
     {
     }
 
-    public virtual void OnCheckPoint()
+    public virtual void OnCheckPoint(GameColor color)
     {
-        checkPointAction?.Invoke(gameColor, isInSpotLight, this);
     }
 
     public virtual void UseSkill()

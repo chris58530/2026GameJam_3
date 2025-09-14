@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using UnityEngine;
 
@@ -16,6 +17,14 @@ public class MemberView : MonoBehaviour
     [SerializeField] private Vector2 spawnRangeY;
     [SerializeField] private MemberBase memberBase;
 
+    private List<MemberBase> memberBases = new List<MemberBase>();
+
+    public void Init(Action onGameOver)
+    {
+        player.Init(onGameOver);
+        memberBases.Add(player);
+
+    }
 
     public void StartNPCSpawn(Action onMemberDie)
     {
@@ -26,35 +35,22 @@ public class MemberView : MonoBehaviour
             NPC npc = Instantiate(npcPrefab, spawnPos, Quaternion.identity);
             npc.transform.SetParent(transform);
             npc.Init(onMemberDie);
+            memberBases.Add(npc);
         }
     }
 
-    public void CheckAllMembersPoint(GameColor color, bool isInSpotLight, MemberBase member)
+    public void CheckAllMembersPoint(GameColor color)
     {
-        memberBase = GetComponent<MemberBase>();
-        if (memberBase != null)
+        foreach (var member in memberBases)
         {
-            memberBase.checkPointAction += (c, isInLight, m) =>
-            {
-                if (c == color && isInLight)
-                {
-                    Debug.Log("CheckPoint Success");
-                }
-                else
-                {
-                    Debug.Log("CheckPoint Failed" + m.name);
-                    m.Die();
-                }
-            };
+            member.OnCheckPoint(color);
         }
 
-
     }
-    public void Init(Action onGameOver)
+
+    public void ResetView()
     {
-        player.Init(onGameOver);
+
     }
-
-
 
 }

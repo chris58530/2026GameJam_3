@@ -27,10 +27,12 @@ public class SpotLightView : IView
 
     public bool isPlaying = false;
     public Action<GameColor> onColorChange;
-    public void StartColorProgress(Action<GameColor> action)
+    public Action showGlass;
+    public void StartColorProgress(Action<GameColor> onColorChange, Action showGlass)
     {
         round = 0;
-        onColorChange = action;
+        this.onColorChange = onColorChange;
+        this.showGlass = showGlass;
         isPlaying = true;
 
         if (spotLightImage != null)
@@ -50,7 +52,7 @@ public class SpotLightView : IView
             spotLights.SetColor(Color.white);
             spotLightImage.color = currentColor.color;
             discoBallImage.color = Color.white;
-
+            showGlass?.Invoke();
             // 重置到原本大小，保持y和z不變
             Vector3 resetScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
             spotLightImage.transform.localScale = resetScale;
@@ -99,15 +101,6 @@ public class SpotLightView : IView
         spotLights.transform.DOMove(targetPosition, spotLightMoveDuration).SetEase(Ease.InOutSine);
     }
 
-    public void EndColorProgress()
-    {
-        isPlaying = false;
-    }
-
-    public void Hide()
-    {
-        StopAllCoroutines();
-    }
 
     public ColorSetting[] GetColorSettings()
     {
@@ -116,7 +109,8 @@ public class SpotLightView : IView
 
     public override void ResetView()
     {
-        Hide();
+        isPlaying = false;
+        StopAllCoroutines();
     }
 }
 
