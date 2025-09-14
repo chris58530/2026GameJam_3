@@ -17,7 +17,7 @@ public class Glass : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = randomSprites[Random.Range(0, randomSprites.Length)];
         coolDownComplete = false;
-        DOVirtual.DelayedCall(1f, () => { coolDownComplete = true; });
+        DOVirtual.DelayedCall(1.5f, () => { coolDownComplete = true; });
     }
 
     public void SetColor(GameColor newColor)
@@ -40,6 +40,7 @@ public class Glass : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (coolDownComplete) return;
+
         if (other.TryGetComponent<MemberBase>(out MemberBase member))
         {
             member.UpdateColor(color);

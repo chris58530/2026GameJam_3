@@ -65,13 +65,6 @@ public class NPC : MemberBase
             GameColor targetColor = GameStateManager.Instance.NextColor;
             Debug.Log($"[NPC] {name}: 目標顏色 - {targetColor}");
 
-            // 檢查自己的顏色是否與目標顏色不一樣，且不是白色
-            if (gameColor != GameColor.white && gameColor != targetColor)
-            {
-                Debug.Log($"[NPC] {name}: 自己的顏色 {gameColor} 與目標顏色 {targetColor} 不符，進入狩獵模式");
-                StartHuntingMode();
-                return;
-            }
 
             // 尋找匹配顏色的桌子
             Table foundTable = FindTableWithColor(targetColor);
