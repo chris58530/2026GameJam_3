@@ -29,6 +29,13 @@ public class SpotLightView : IView
     public Action<GameColor> onColorChange;
     public Action showGlass;
     public Action resetAllMemberColor;
+    private void OnEnable()
+    {
+        if (spotLightImage != null)
+            originalScale = spotLightImage.transform.localScale;
+        spotLightImage.gameObject.SetActive(false);
+        spotLights.gameObject.SetActive(false);
+    }
     public void StartColorProgress(Action<GameColor> onColorChange, Action showGlass, Action resetAllMemberColor)
     {
         round = 0;
@@ -37,8 +44,9 @@ public class SpotLightView : IView
         this.resetAllMemberColor = resetAllMemberColor;
         isPlaying = true;
 
-        if (spotLightImage != null)
-            originalScale = spotLightImage.transform.localScale;
+
+        spotLightImage.gameObject.SetActive(true);
+        spotLights.gameObject.SetActive(true);
 
         StartCoroutine(PlayingCoroutine());
         Debug.Log("StartColorProgress");
@@ -118,6 +126,7 @@ public class SpotLightView : IView
     {
         spotLightImage.transform.localScale = originalScale;
         spotLights.SetColor(Color.white);
+        spotLightImage.gameObject.SetActive(false);
         discoBallImage.color = Color.white;
         spotLightImage.color = Color.white;
         StopAllCoroutines();

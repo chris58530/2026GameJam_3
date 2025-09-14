@@ -166,6 +166,18 @@ MonoBehaviour:
   canDash: 1
   isInSpotLight: 0
   gameColor: 0
+  rb: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  glassPrefab: {fileID: 0}
+  NPCState: 0
+  targetTable: {fileID: 0}
+  huntingTarget: {fileID: 0}
+  targetSpotLight: {fileID: 0}
+  targetGlass: {fileID: 0}
+  moveSpeed: 2
+  dashDistance: 3
+  dashDuration: 0.2
+  canSearchGlass: 1
 --- !u!70 &2556901381715619324
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -229,4 +241,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
